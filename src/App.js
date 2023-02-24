@@ -7,7 +7,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="Construccion" element={<div>Construccion</div>} />
+        <Route
+          path="Construccion"
+          element={<PageWrapper>Construccion</PageWrapper>}
+        />
         <Route
           path="/"
           element={
