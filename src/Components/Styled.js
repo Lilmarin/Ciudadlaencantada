@@ -25,3 +25,13 @@ export const CLE_Button = styled.div`
 `;
 
 //contenedores
+
+export const ComponenteGrecia = styled.div`
+  width: 100%;
+  min-height: 500px;
+  background-color: ${(props) => props.varbackgroundcolor || "green"};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
