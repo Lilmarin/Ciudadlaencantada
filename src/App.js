@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Home from "./Pages/Home";
 import PageWrapper from "./Sections/PageWrapper";
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
           path="/"
           element={
             <PageWrapper>
-              <div>Hola</div>
+              <Home />
             </PageWrapper>
           }
         ></Route>
