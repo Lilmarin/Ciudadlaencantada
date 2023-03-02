@@ -1,5 +1,6 @@
 import React from "react";
 import "./Propiedadesmexico.scss";
+import { Roboto } from "../../Components/Styled2";
 
 let propiedades_mexico = require('../../assets/img/CIUDAD_ENCANTADA_PROPIEDADES_MEXICO_pm-logo.png');
 let imgDiv2 = require('../../assets/img/CIUDAD_ENCANTADA_PROPIEDADES_MEXICO_Rectangle 863.png');
@@ -20,7 +21,9 @@ const Propiedadesmexico = () => {
           <img src={icon1} id="sizeicon"></img>
         </div>
         <div>
-          <p>Contamos con un gran equipo de asesores</p>
+          <Roboto>
+            Contamos con un gran equipo de asesores
+          </Roboto>
         </div>
       </div>
       <div id="contenedor">
@@ -28,7 +31,9 @@ const Propiedadesmexico = () => {
           <img src={icon2} id="sizeicon"></img>
         </div>
         <div>
-          <p>Asesoría inmobiliaria profesional y calificada</p>
+        <Roboto>
+          Asesoría inmobiliaria profesional y calificada
+        </Roboto>
         </div>
       </div>
       <div id="contenedor">
@@ -36,7 +41,9 @@ const Propiedadesmexico = () => {
           <img src={icon3} id="sizeicon"></img>
         </div>
         <div>
-        <p>Oficinas en Torreón y en Ciudad La Encantada</p>
+        <Roboto>
+          Oficinas en Torreón y en Ciudad La Encantada
+        </Roboto>
         </div>
       </div>
       <div id="contenedor">
@@ -44,7 +51,9 @@ const Propiedadesmexico = () => {
           <img src={icon4} id="sizeicon"></img>
         </div>
         <div>
-        <p>Tramitamos créditos con la tasa más baja del mercado</p>
+        <Roboto>
+          Tramitamos créditos con la tasa más baja del mercado
+        </Roboto>
         </div>
       </div>
       <div id="contenedor">
@@ -52,7 +61,9 @@ const Propiedadesmexico = () => {
           <img src={icon5} id="sizeicon"></img>
         </div>
         <div>
-        <p>Crédito propio </p>
+        <Roboto>
+          Crédito propio
+        </Roboto>
         </div>
       </div>
 
