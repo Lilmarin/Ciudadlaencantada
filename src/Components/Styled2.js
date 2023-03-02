@@ -32,7 +32,7 @@ export const Roboto = styled.p`
   margin: ${(props) => props.varmargin || "0px"};
   max-width: ${(props) => props.varmaxwidth || "auto"};
   width: ${(props) => props.varwidth || "auto"};
-  @media (max-width: 100px) {
+  @media (max-width: 500px) {
     font-size: ${(props) => props.fontsizem || "16px"};
   }
 `;
