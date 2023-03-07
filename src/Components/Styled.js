@@ -87,13 +87,19 @@ export const Gridwrapper = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
   grid-gap: 32px;
+  margin-top: 30px;
+  @media (max-width: 1000px) {
+    grid-template-columns: 100%;
+    grid-gap: 20px;
+  }
 `;
 
 export const Griditem = styled.div`
   width: 100%;
   min-height: 529px;
-  background: ${(props) => props.varbackgroundimage || "green"};
-  &:hover {
-    background: ${(props) => props.varbackgroundimagehover || "pink"};
+  max-height: 529px;
+  @media (max-width: 1000px) {
+    min-height: 237px;
+    max-height: 237px;
   }
 `;
