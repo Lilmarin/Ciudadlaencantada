@@ -50,14 +50,22 @@
     .Section-Propiedadesmexico{
         flex-wrap: wrap;
         flex-direction: column;
+        
         #sizeContent2{
             width: 100%;
+            padding-bottom: 30px;
+            text-align: center;
         }
         #sizeContent{
             width: 100%;
             text-align: center;
         }
-        
+        #sizeimage{
+            width:77%;
+        }
+        #sizeimage2{
+            width:94%;
+        }
         #sizeicon{
             width: 50px;
         }
