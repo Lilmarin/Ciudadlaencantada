@@ -1,3 +1,62 @@
+.Section-Propiedadesmexico {
+  width: 84%;
+  max-width: 1600px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: nowrap;
+}
+.Section-Propiedadesmexico hr {
+  background-color: brown;
+}
 .Section-Propiedadesmexico p {
-    color: black;
-  }/*# sourceMappingURL=Presentacion.css.map */
+  color: black;
+}
+.Section-Propiedadesmexico #contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  grid-gap: 15px;
+  width: 100%;
+}
+.Section-Propiedadesmexico #sizeimage {
+  width: 80%;
+}
+.Section-Propiedadesmexico #sizeimage2 {
+  width: 100%;
+}
+.Section-Propiedadesmexico #sizeicon {
+  width: 90%;
+}
+.Section-Propiedadesmexico .padd {
+  padding-bottom: 5%;
+}
+.Section-Propiedadesmexico #sizeContent2 {
+  width: 52%;
+}
+.Section-Propiedadesmexico #sizeContent {
+  width: 46%;
+}
+.Section-Propiedadesmexico .sizecolumn {
+  width: 13%;
+}
+
+@media screen and (max-width: 500px) and (min-width: 100px) {
+  .Section-Propiedadesmexico {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .Section-Propiedadesmexico #sizeContent2 {
+    width: 100%;
+  }
+  .Section-Propiedadesmexico #sizeContent {
+    width: 100%;
+  }
+  .Section-Propiedadesmexico .sizecolumn {
+    width: 18%;
+  }
+}/*# sourceMappingURL=Propiedadesmexico.css.map */
