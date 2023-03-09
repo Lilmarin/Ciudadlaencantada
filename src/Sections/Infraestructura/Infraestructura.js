@@ -1,6 +1,6 @@
 import React from "react";
 import {Backgroundbigcontainer, Littleline} from "../../Components/Styled";
-import {Containerinfraestructura, Columnas, Columna, Montserrat, Roboto, Camara} from "../../Components/Styled2"
+import {Containerinfraestructura, Columnas, Columna, ColumnImage, Roboto, ColumnsImage, Title} from "../../Components/Styled2"
 import "./Infraestructura.scss";
 
 let camara = require('../../assets/img/CIUDAD_ENCANTADA_INFRAESTRUCTURA_icon-cam.png');
@@ -16,45 +16,52 @@ const Infraestructura = () => {
 
   <section className="Section-Infraestructura">
     <Backgroundbigcontainer
-  varbackgroundcolor="#F5F5F5">
+  varbackgroundcolor="none">
     <Containerinfraestructura>
       <Columnas
-      vargridgap="40px"
-      vargridcolumns="52% 45%"
+      vargridgap="50px"
+      vargridcolumns="52% 43%"
       varalignitems="center"
       vargrid="none"
+      className="gridgapcolumns1"
       >
       <Columna>
-         <Columnas
+         <ColumnsImage
          vardisplay="innerit"
          vardirection="innerit"
          varminheight="238px"
+         className="gridgapcolumns2"
          >
-            <Columna varbackgroundimage="#FFFFFF">
-            <img src={img1Infraestructura} id="image"></img>
-            </Columna> 
-            <Columna varbackgroundimage="#FFFFFF">
-            <img src={img2Infraestructura} id="image"></img>
-            </Columna>
-         </Columnas>
+            <ColumnImage varbackgroundimage="#FFFFFF">
+            <img src={img1Infraestructura} id="image" alt="ciudad encantada-infraestructura edificio"></img>
+            </ColumnImage> 
+            <ColumnImage varbackgroundimage="#FFFFFF">
+            <img src={img2Infraestructura} id="image" alt="ciudad encantada-infraestructura estructura edifcio"></img>
+            </ColumnImage>
+         </ColumnsImage>
       </Columna>
-      <Columna>
+      <Columna
+      >
       <div className="title">
         <Littleline>
 
         </Littleline>
-        <h2>Infraestructura</h2>
-        <h5>En Ciudad La Encantada tendremos estos grandes beneficios.</h5>
+        <Title>Infraestructura</Title>
+        <h5
+          className="padd"
+        >
+          En Ciudad La Encantada tendremos estos grandes beneficios.
+        </h5>
       </div>
       <div className="beneficios">
         <Columnas
-        vargridgap="10px"
         vargridcolumns="10% 89%"
         vardisplay="innerit"
         vardirection="innerit"
+        className="padd gridgapcolumns3"
         >
           <Columna>
-            <img src= {camara} id="icon"/>
+            <img src= {camara} id="icon"alt="Sistema de video vigilancia"/>
           </Columna>
           <Columna>
             <h4>Sistema de video vigilancia </h4>
@@ -67,14 +74,14 @@ const Infraestructura = () => {
         </Columnas>
 
         <Columnas
-        vargridgap="10px"
         vargridcolumns="10% 89%"
         varmargin="30px 0 30px"
         vardisplay="innerit"
         vardirection="innerit"
+        className="padd gridgapcolumns3"
         >
           <Columna>
-            <img src= {drenajePluvial} id="icon"/>
+            <img src= {drenajePluvial} alt="Drenaje pluvial" id="icon"/>
           </Columna>
           <Columna>
             <h4>Drenaje pluvial</h4>
@@ -86,13 +93,13 @@ const Infraestructura = () => {
           </Columna>
         </Columnas>
         <Columnas
-        vargridgap="10px"
         vargridcolumns="10% 89%"
         vardisplay="innerit"
         vardirection="innerit"
+        className="padd gridgapcolumns3"
         >
           <Columna>
-            <img src= {oficina} id="icon"/>
+            <img src= {oficina} id="icon" alt="Oficina de administracion central"/>
           </Columna>
           <Columna>
             <h4>Oficina de administración central </h4>
@@ -104,14 +111,14 @@ const Infraestructura = () => {
           </Columna>
         </Columnas>
         <Columnas
-        vargridgap="10px"
         vargridcolumns="10% 89%"
         varmargin="30px 0 30px"
         vardisplay="innerit"
         vardirection="innerit"
+        className="padd gridgapcolumns3"
         >
           <Columna>
-            <img src= {agua} id="icon"/>
+            <img src= {agua} id="icon" alt="Planta de tratamiento de aguas"/>
           </Columna>
           <Columna>
             <h4>Planta de tratamiento de aguas </h4>

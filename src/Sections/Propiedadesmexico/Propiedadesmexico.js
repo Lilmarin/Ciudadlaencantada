@@ -19,11 +19,11 @@ const Propiedadesmexico = () => {
     >
         <section className="Section-Propiedadesmexico">
           <div id="sizeContent2">
-            <img src={propiedades_mexico} id="sizeimage" className="padd"/>
+            <img src={propiedades_mexico} id="sizeimage" alt="logo propiedades mexico" className="padd"/>
           <div>
           <div id="contenedor">
             <div className="sizecolumn">
-              <img src={icon1} id="sizeicon"></img>
+              <img src={icon1} id="sizeicon" alt="Contamos con un gran equipo de asesores"></img>
             </div>
             <div>
               <Roboto>
@@ -33,7 +33,7 @@ const Propiedadesmexico = () => {
           </div>
         <div id="contenedor">
           <div className="sizecolumn">
-            <img src={icon2} id="sizeicon"></img>
+            <img src={icon2} id="sizeicon" alt="Asesoría inmobiliaria profesional y calificada"></img>
           </div>
           <div>
             <Roboto>
@@ -43,7 +43,7 @@ const Propiedadesmexico = () => {
         </div>
         <div id="contenedor">
           <div className="sizecolumn">
-            <img src={icon3} id="sizeicon"></img>
+            <img src={icon3} id="sizeicon" alt="Oficinas en Torreón y en Ciudad La Encantada"></img>
           </div>
           <div>
             <Roboto>
@@ -53,7 +53,7 @@ const Propiedadesmexico = () => {
         </div>
         <div id="contenedor">
           <div className="sizecolumn">
-            <img src={icon4} id="sizeicon"></img>
+            <img src={icon4} id="sizeicon" alt="Tramitamos créditos con la tasa más baja del mercado"></img>
           </div>
           <div>
             <Roboto>
@@ -63,7 +63,7 @@ const Propiedadesmexico = () => {
         </div>
         <div id="contenedor">
           <div className="sizecolumn">
-            <img src={icon5} id="sizeicon"></img>
+            <img src={icon5} id="sizeicon" alt="Crédito propio"></img>
           </div>
         <div>
           <Roboto>
@@ -75,7 +75,7 @@ const Propiedadesmexico = () => {
     </div>
     </div>
     <div id="sizeContent">
-      <img src={imgDiv2} id="sizeimage2"></img>
+      <img src={imgDiv2} id="sizeimage2" alt="ciudad napi"></img>
     </div>
   </section>
 </Backgroundbigcontainer>
