@@ -30,6 +30,7 @@ export const Title = styled.p`
   line-height: ${(props) => props.varlineheight || "130%"};
   text-align: ${(props) => props.varalign || "left"};
   align-items: center;
+  justify-content: ${(props) => props.varjustifycontent || "inherit"};
   margin: ${(props) => props.varmargin || "0px"};
   max-width: ${(props) => props.varmaxwidth || "auto"};
   width: ${(props) => props.varwidth || "auto"};
@@ -199,5 +200,10 @@ export const ContainerResultados = styled.div`
   align-items: center;
   justify-content: center;
   background: linear-gradient(to right, #B3282D, #842023, #842023) no-repeat center center fixed;
-
+  @media (max-width: 1000px) {
+    padding: 50px 0 50px;
+  }
+  @media (max-width: 550px) {
+    
+  }
 `;
