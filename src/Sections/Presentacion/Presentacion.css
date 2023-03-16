@@ -1,0 +1,36 @@
+.Section-presentacion {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_BACKGROUND.png");
+  background-color: #e5e5e5;
+  background-size: cover;
+  background-position: center;
+  min-height: 902px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Section-presentacion .imageDispositivos {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.Section-presentacion .gripgap {
+  grid-gap: 50px;
+}
+.Section-presentacion .visible2 {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  .Section-presentacion {
+    height: 1100px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 100px) {
+  .Section-presentacion .visible {
+    display: none;
+  }
+  .Section-presentacion .visible2 {
+    display: inline;
+  }
+}/*# sourceMappingURL=Presentacion.css.map */

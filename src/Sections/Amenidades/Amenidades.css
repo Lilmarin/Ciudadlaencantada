@@ -1,0 +1,41 @@
+.Amenidades .imagenes-wrapper .imagenitem {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Amenidades .imagenes-wrapper .imagenitem.parquecentral {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_PARQUE_CENTRAL2.png");
+}
+.Amenidades .imagenes-wrapper .imagenitem.parquecentral:hover {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_PARQUE_CENTRAL_HOVER2.png");
+}
+.Amenidades .imagenes-wrapper .imagenitem.plazascomerciales {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_PLAZAS_COMERCIALES2.png");
+}
+.Amenidades .imagenes-wrapper .imagenitem.plazascomerciales:hover {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_PLAZAS_COMERCIALES_HOVER2.png");
+}
+.Amenidades .imagenes-wrapper .imagenitem.colegio {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_COLEGIO2.png");
+}
+.Amenidades .imagenes-wrapper .imagenitem.colegio:hover {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_COLEGIO_HOVER2.png");
+}
+.Amenidades .imagenes-wrapper .imagenitem.areaverde {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_AREA_VERDE2.png");
+}
+.Amenidades .imagenes-wrapper .imagenitem.areaverde:hover {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_AREA_VERDE_HOVER2.png");
+}
+.Amenidades .imagenes-wrapper .imagenitem.restaurantes {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_RESTAURANTES2.png");
+}
+.Amenidades .imagenes-wrapper .imagenitem.restaurantes:hover {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_RESTAURANTESHOVER2.png");
+}
+.Amenidades .imagenes-wrapper .imagenitem.servicios {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_SERVICIOS2.png");
+}
+.Amenidades .imagenes-wrapper .imagenitem.servicios:hover {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_SERVICIOS_HOVER2.png");
+}/*# sourceMappingURL=Amenidades.css.map */

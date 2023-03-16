@@ -1,0 +1,73 @@
+.Section-Propiedadesmexico{
+    
+    width: 84%; max-width: 1600px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    margin: auto;
+    flex-wrap:nowrap;
+
+    hr{
+        background-color: brown;
+    }
+    p{
+        color: black;
+    }
+    #contenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        grid-gap: 15px;
+        width: 100%;
+    }
+    #sizeimage{
+        width:79%;
+    }
+    #sizeimage2{
+       width: 95%
+    }
+    #sizeicon{
+        width: 90%;
+    }
+    .padd{
+        padding-bottom: 5%;
+    }
+    #sizeContent2{
+        width: 52%;
+    }
+    #sizeContent{
+        width: 46%;
+        text-align: right;
+    }
+    .sizecolumn{
+        width: 13%;
+    }
+}
+@media screen and (max-width: 500px) and (min-width: 100px) {
+    .Section-Propiedadesmexico{
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+        #sizeContent2{
+            width: 100%;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+        #sizeContent{
+            width: 100%;
+            text-align: center;
+        }
+        #sizeimage{
+            width:77%;
+        }
+        #sizeimage2{
+            width:94%;
+        }
+        #sizeicon{
+            width: 50px;
+        }
+    }
+}
