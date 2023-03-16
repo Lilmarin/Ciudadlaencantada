@@ -85,8 +85,8 @@ export const ComponenteGrecia = styled.div`
 export const Gridwrapper = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-gap: 32px;
+  grid-template-columns: 48.5% 48.5%;
+  grid-gap: 3%;
   margin-top: 30px;
   @media (max-width: 1000px) {
     grid-template-columns: 100%;
@@ -101,5 +101,27 @@ export const Griditem = styled.div`
   @media (max-width: 1000px) {
     min-height: 237px;
     max-height: 237px;
+  }
+`;
+
+export const BtnRed = styled.div`
+  background-color: ${(props) => props.backgcolor || "#b3282d"};
+  color: ${(props) => props.varcolor || "#FFFFFF"};
+  padding: ${(props) => props.varmargin || "18px 36px"};
+  margin: ${(props) => props.varmargin || "0px"};
+  font-size: ${(props) => props.varfontsize || "16px"};
+  font-family: ${(props) => props.varfontfamily || "Montserrat"};
+  font-weight: ${(props) => props.varweight || "700"};
+  min-width: ${(props) => props.varminwidth || "200px"};
+  min-height: 54px;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 8px 8px rgba(119, 33, 107, 0.2);
+  width: ${(props) => props.varwidth || "auto"};
+  cursor: pointer;
+  :hover {
+    transform: translateY(-5%);
   }
 `;

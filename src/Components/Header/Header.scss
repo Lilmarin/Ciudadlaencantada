@@ -1,0 +1,77 @@
+.Header-Container-CLE {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  min-height: 140px;
+  align-items: center;
+
+  .Header-upper {
+    width: 88.5%;
+    z-index: 9999999;
+    background-color: #ffffff;
+    height: 100px;
+    position: fixed;
+    top: 40px; /* Posición inicial */
+    transition: opacity 0.5s ease; /* Transición de opacidad para una transición suave */
+    opacity: 1; /* Opacidad inicial */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .Grid-Links {
+      height: 100%;
+      padding: 0 0 0 0;
+      margin: 0;
+      .Grid-Items-Header {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .Grid-links-uls {
+          width: 100%;
+          ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+            .Enlace-linked {
+              text-decoration: none;
+              cursor: pointer;
+              :hover {
+                transform: translateY(-2%);
+                color: #b3282d;
+              }
+            }
+          }
+        }
+        .button-closed {
+          padding: 0;
+          border: none;
+          background: none;
+        }
+        .Phone-Whats-Item {
+          background-color: #b3282d;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 100%;
+
+          a {
+            cursor: pointer;
+            :hover {
+              transform: translateY(-5%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
