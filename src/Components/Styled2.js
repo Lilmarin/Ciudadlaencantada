@@ -34,11 +34,12 @@ export const Title = styled.p`
   max-width: ${(props) => props.varmaxwidth || "auto"};
   width: ${(props) => props.varwidth || "auto"};
   padding: ${(props) => props.varpadd || "auto"};
-  @media (max-width: 500px) {
-    font-size: ${(props) => props.fontsizem || "24px"};
+  @media (max-width: 1000px) {
+    padding: ${(props) => props.varpaddi || "auto"};
   }
   @media (max-width: 500px) {
     text-align: ${(props) => props.varalignt || "center"};
+    font-size: ${(props) => props.fontsizem || "26px"};
   }
 `;
 
@@ -49,15 +50,6 @@ export const CLE_Button = styled.div`
 
 //contenedores
 
-export const ComponenteGrecia = styled.div`
-  width: 100%;
-  min-height: 500px;
-  background-color: ${(props) => props.varbackgroundcolor || "green"};
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
 export const Containerinfraestructura = styled.div`
   width: 89.4%;
   max-width: 1709px;
@@ -93,10 +85,8 @@ export const Columnas = styled.div`
   @media (max-width: 500px) {
     grid: ${(props) => props.vargrid || "innerit"};
     display: ${(props) => props.vardisplay || "flex"};
-    flex-direction: ${(props) => props.vardirection || "column-reverse"};
-    
+    flex-direction: ${(props) => props.vardirection || "column-reverse"}; 
   }
-  
 `;
 
 export const Columna = styled.div`
@@ -165,8 +155,49 @@ margin: ${(props) => props.varmargin || "0px"};
 max-width: ${(props) => props.varmaxwidth || "auto"};
 border-radius: ${(props) => props.varborder || "3px"};
 &:hover {
-  background-color: ${(props) => props.varbackgroundcolor || "#00394C"};
+  background-color: ${(props) => props.varbackgroundcolorh || "#00394C"};
   cursor: pointer;
   border: 1px solid black;
 } 
+@media (max-width: 550px) {
+  width: ${(props) => props.varwidthmovil || "auto"};
+  }
+`;
+
+export const Containerubicacion = styled.div`
+  width: 80%;
+  max-width: 1536px;
+  min-height:631px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 850px) {
+    width: 85%;
+    margin:auto;
+  }
+  @media (max-width: 550px) {
+    width: 90%;
+    margin:auto
+  }
+`;
+
+export const ConteinerCLEdesarrollo = styled.div`
+  width: 100%;
+  min-height: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const ContainerResultados = styled.div`
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #B3282D, #842023, #842023) no-repeat center center fixed;
+
 `;

@@ -46,7 +46,11 @@ const Infraestructura = () => {
         <Littleline>
 
         </Littleline>
-        <Title>Infraestructura</Title>
+        <Title
+        varpaddi="20px 0 20px"
+        >
+          Infraestructura
+        </Title>
         <h5
           className="padd"
         >
