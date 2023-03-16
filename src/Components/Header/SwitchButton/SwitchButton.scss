@@ -1,0 +1,57 @@
+.switch-button {
+  position: relative;
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #b3282d;
+  background-image: url("../../../assets/img/CiudadLaEncantada_Moon.png");
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: 18%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-origin: content-box;
+  border: #b3282d 1px solid;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  .switch-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-origin: content-box;
+    background-color: #fff;
+    background-image: url("../../../assets/img/CiudadLaEncantada_Sun.png");
+    background-repeat: no-repeat;
+    background-size: 32%;
+    background-position: 72%;
+    border-radius: 20px;
+    transition: transform 0.2s;
+    transform: translateX(0%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .switch-knob {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #b3282d;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    transform: translateY(-50%);
+    transition: transform 0.4s;
+  }
+
+  &.active .switch-background {
+    transform: translateX(100%);
+    display: none;
+  }
+
+  &.active .switch-knob {
+    transform: translate(38px, -50%);
+    background-color: #fff;
+  }
+}

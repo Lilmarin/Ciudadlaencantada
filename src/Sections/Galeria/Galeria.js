@@ -1,7 +1,12 @@
 import React from "react";
+import "./Galeria.scss";
 
-const Galeria = () => {
-  return <div>Galeria</div>;
+const Galeria = ({ myRef }) => {
+  return (
+    <div ref={myRef} className="Galeria-Container">
+      Galeria
+    </div>
+  );
 };
 
 export default Galeria;
