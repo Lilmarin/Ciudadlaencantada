@@ -1,61 +1,48 @@
-.Amenidades{
-    .imagenes-wrapper{
-       .imagenitem{
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
+.Amenidades {
+  .imagenes-wrapper {
+    .imagenitem {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
 
-        &.parquecentral{
-            background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_PARQUE_CENTRAL2.png");
-          &:hover {
-            background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_PARQUE_CENTRAL_HOVER2.png");
+      &.parquecentral {
+        background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_PARQUE_CENTRAL2.png");
+        &:hover {
+          background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_PARQUE_CENTRAL_HOVER2.png");
         }
-        
-        }
-       &.plazascomerciales{
+      }
+      &.plazascomerciales {
         background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_PLAZAS_COMERCIALES2.png");
- 
-          &:hover {
-            background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_PLAZAS_COMERCIALES_HOVER2.png"); 
 
+        &:hover {
+          background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_PLAZAS_COMERCIALES_HOVER2.png");
         }
-        
+      }
+      &.colegio {
+        background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_COLEGIO2.png");
+        &:hover {
+          background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_COLEGIO_HOVER2.png");
         }
-        &.colegio{
-       
-            background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_COLEGIO2.png");
-            &:hover {
-                background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_COLEGIO_HOVER2.png");
+      }
+      &.areaverde {
+        background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_AREA_VERDE2.png");
 
-          }
-        
+        &:hover {
+          background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_AREA_VERDE_HOVER2.png");
         }
-        &.areaverde{
-            background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_AREA_VERDE2.png");
-
-          &:hover {
-            background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_AREA_VERDE_HOVER2.png");
-
-          }
-        
-        }
-       &.restaurantes{
+      }
+      &.restaurantes {
         background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_RESTAURANTES2.png");
-          &:hover {
-            background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_RESTAURANTESHOVER2.png");
-
+        &:hover {
+          background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_RESTAURANTESHOVER2.png");
         }
-        
+      }
+      &.servicios {
+        background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_SERVICIOS2.png");
+        &:hover {
+          background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_SERVICIOS_HOVER2.png");
         }
-        &.servicios{
-           
-            background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_SERVICIOS2.png");
-            &:hover {
-
-                background-image: url("../../assets/img/CIUDAD_ENCANTADA_AMENIDADES_SERVICIOS_HOVER2.png");
-          }
-        
-        }
-       }
+      }
     }
+  }
 }

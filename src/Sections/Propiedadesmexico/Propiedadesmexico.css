@@ -24,10 +24,10 @@
   width: 100%;
 }
 .Section-Propiedadesmexico #sizeimage {
-  width: 80%;
+  width: 79%;
 }
 .Section-Propiedadesmexico #sizeimage2 {
-  width: 100%;
+  width: 95%;
 }
 .Section-Propiedadesmexico #sizeicon {
   width: 90%;
@@ -40,6 +40,7 @@
 }
 .Section-Propiedadesmexico #sizeContent {
   width: 46%;
+  text-align: right;
 }
 .Section-Propiedadesmexico .sizecolumn {
   width: 13%;
@@ -52,11 +53,20 @@
   }
   .Section-Propiedadesmexico #sizeContent2 {
     width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
   }
   .Section-Propiedadesmexico #sizeContent {
     width: 100%;
+    text-align: center;
   }
-  .Section-Propiedadesmexico .sizecolumn {
-    width: 18%;
+  .Section-Propiedadesmexico #sizeimage {
+    width: 77%;
+  }
+  .Section-Propiedadesmexico #sizeimage2 {
+    width: 94%;
+  }
+  .Section-Propiedadesmexico #sizeicon {
+    width: 50px;
   }
 }/*# sourceMappingURL=Propiedadesmexico.css.map */

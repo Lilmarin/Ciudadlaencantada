@@ -1,0 +1,119 @@
+.Section-Infraestructura {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_BACKGROUND.png");
+  background-color: #e5e5e5;
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+  display: flex;
+  justify-content: center;
+}
+.Section-Infraestructura .image {
+  border-radius: 10px;
+  width: 100%;
+}
+.Section-Infraestructura .gridgapcolumns1 {
+  grid-gap: 40px;
+}
+.Section-Infraestructura .gridgapcolumns2 {
+  grid-gap: 14px;
+}
+.Section-Infraestructura .gridgapcolumns3 {
+  grid-gap: 15px;
+}
+.Section-Infraestructura #icon {
+  max-width: 60px;
+}
+.Section-Infraestructura .title {
+  margin: 0 20px 30px;
+}
+.Section-Infraestructura h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1rem;
+  text-align: left;
+  color: #333333;
+}
+.Section-Infraestructura h5 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 130%;
+  text-align: left;
+  color: #4F4F4F;
+  margin-top: 0px;
+}
+.Section-Infraestructura h4 {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 130%;
+  color: #333333;
+  margin: 0px;
+}
+
+@media screen and (max-width: 500px) and (min-width: 100px) {
+  .Section-Infraestructura {
+    padding: 20px 0 80px;
+    min-height: 400px;
+    height: 1230px;
+  }
+  .Section-Infraestructura h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .Section-Infraestructura h5 {
+    font-size: 18px;
+  }
+  .Section-Infraestructura h4 {
+    font-size: 18px;
+  }
+  .Section-Infraestructura .padd {
+    padding-bottom: 35px;
+  }
+  .Section-Infraestructura .gridgapcolumns1 {
+    grid-gap: 0px;
+  }
+  .Section-Infraestructura .gridgapcolumns2 {
+    grid-gap: 5px;
+  }
+  .Section-Infraestructura .gridgapcolumns3 {
+    grid-gap: 18px;
+  }
+  .Section-Infraestructura #icon {
+    min-width: 35px;
+  }
+}
+@media screen and (max-width: 390px) and (min-width: 100px) {
+  .Section-Infraestructura {
+    padding: 20px 0 80px;
+    min-height: 400px;
+    height: 1330px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 100px) {
+  .Section-Infraestructura .title {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Section-Infraestructura .texttitle {
+    text-align: center;
+    margin: auto;
+  }
+  .Section-Infraestructura h2 {
+    text-align: center;
+  }
+  .Section-Infraestructura h5 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1350px) and (min-width: 100px) {
+  .Section-Infraestructura .title {
+    margin: 0 10px 10px;
+  }
+}/*# sourceMappingURL=Infraestructura.css.map */
