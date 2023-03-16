@@ -1,69 +1,69 @@
 .Section-ubicacion {
-    background-image: url("../../assets/img/CIUDAD_ENCANTADA_BACKGROUND.png");
-    background-color: #e5e5e5;
-    background-size: cover;
-    background-position: center;
-    min-height: 800px;
-  
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_BACKGROUND.png");
+  background-color: #e5e5e5;
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .contubicacion {
+    width: 90%;
+    margin: auto;
+  }
+  .background-mapa {
+    background-image: url("../../assets/img/CIUDAD_ENCANTADA_UBICACION_BACKGROUND_MAPA.png");
+    background-size: 93% auto;
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+  .mapa {
+    width: 93%;
+    height: 590px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    .contubicacion{
-        width: 90%;
-        margin: auto;
-    }
-    .background-mapa{
-        background-image: url("../../assets/img/CIUDAD_ENCANTADA_UBICACION_BACKGROUND_MAPA.png");
-        background-size: 93% auto;
-        background-position: right top;
-        background-repeat: no-repeat;
-    }
-    .mapa{
-        width: 93%;
-        height: 590px;
-        display: flex;
-        margin-top: 41px;
-        border-color: white;
-        border-image: none;
-        border-style: solid;
-        border-width: unset;
-    }
-    ul li::marker{
-        color: #B3282D;
-        list-style-type: disc;
-        font-size: 24px;
-    }
-    .gridgap{
-        grid-gap: 60px;
-    }
-    .displaynone{
-        display: none;
-    }
+    margin-top: 41px;
+    border-color: white;
+    border-image: none;
+    border-style: solid;
+    border-width: unset;
+  }
+  ul li::marker {
+    color: #b3282d;
+    list-style-type: disc;
+    font-size: 24px;
+  }
+  .gridgap {
+    grid-gap: 60px;
+  }
+  .displaynone {
+    display: none;
+  }
 }
 @media screen and (max-width: 1000px) and (min-width: 100px) {
-    .Section-ubicacion{
-        min-height: 1000px;
-        .mapa{
-            height: 435px;
-        }
-    } 
+  .Section-ubicacion {
+    min-height: 1000px;
+    .mapa {
+      height: 435px;
+    }
+  }
 }
 @media screen and (max-width: 500px) and (min-width: 100px) {
-    .Section-ubicacion{
-        min-height: 800px;
-        .displaynone{
-            display:inline-block;
-        }
-        .mapa{           
-            height: 235px;
-            margin-top: 15px;
-        }
-        .gridgap{
-            grid-gap: 16px;
-        }
-        .contubicacion{
-            width: 100%;
-            margin: auto;
-        }
+  .Section-ubicacion {
+    min-height: 800px;
+    .displaynone {
+      display: inline-block;
     }
+    .mapa {
+      height: 235px;
+      margin-top: 15px;
+    }
+    .gridgap {
+      grid-gap: 16px;
+    }
+    .contubicacion {
+      width: 100%;
+      margin: auto;
+    }
+  }
 }

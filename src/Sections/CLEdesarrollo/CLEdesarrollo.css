@@ -1,0 +1,82 @@
+.Section-cledesarrollo .divlogo {
+  background-color: white;
+  width: 400px;
+  height: 146px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  margin-top: 35px;
+}
+.Section-cledesarrollo .divcolumn {
+  width: 63%;
+  margin-left: 12.6%;
+}
+.Section-cledesarrollo .fontl {
+  font-size: 36px;
+  font-weight: 600;
+}
+.Section-cledesarrollo .video {
+  height: 580px;
+  height: cover;
+}
+.Section-cledesarrollo .cle-desarrollo {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_CLEDESARROLLO_BACKGROUND.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-color: #B3282D;
+  height: 100%;
+}
+.Section-cledesarrollo h5 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: white;
+  font-size: 30px;
+  line-height: 130%;
+  font-weight: 400;
+}
+.Section-cledesarrollo .displaynone {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 100px) {
+  .Section-cledesarrollo .divcolumn {
+    width: 88%;
+    margin: auto;
+    padding: 40px 0 0;
+  }
+  .Section-cledesarrollo .divlogo {
+    width: 60%;
+    height: 100px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 100px) {
+  .Section-cledesarrollo .divlogo {
+    display: none;
+  }
+  .Section-cledesarrollo .video {
+    height: 390px;
+  }
+  .Section-cledesarrollo .divcolumn {
+    width: 88%;
+    margin: auto;
+    padding: 40px 0 0;
+  }
+  .Section-cledesarrollo .displaynone {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 500px) and (min-width: 100px) {
+  .Section-cledesarrollo .video {
+    height: 196px;
+  }
+  .Section-cledesarrollo h5 {
+    font-size: 20px;
+    margin: 15px 0 20px;
+  }
+  .Section-cledesarrollo .fontl {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}/*# sourceMappingURL=CLEdesarrollo.css.map */
