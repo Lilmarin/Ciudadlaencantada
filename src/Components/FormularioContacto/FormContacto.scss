@@ -1,0 +1,94 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background: linear-gradient(to right, #BC4F53, #B3282D) no-repeat center center fixed;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 1395px;
+    width: 96.8%;
+    min-height: 556px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+   
+  .popup-content-items{
+    width: 80%;
+    max-width: 1109px;
+  }
+  
+  .popup-content .cerrar {
+    background: none;
+    color: #050505;
+    font-size: 40px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .popup-content .btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Estilos para el formulario */
+  form {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"]{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  label {
+    display: block;
+    text-align: left;
+  }
+
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Estilos para mensajes de error */
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  

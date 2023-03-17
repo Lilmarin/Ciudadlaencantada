@@ -70,7 +70,8 @@ export const Containerinfraestructura = styled.div`
 `;
 
 export const Columnas = styled.div`
-  width: 100%; max-width:100%;
+  width: ${(props) => props.varwidth || "100%"};
+  max-width:100%;
   display: grid;
   grid-template-columns: ${(props) => props.vargridcolumns || "50% 50%"};
   justify-content: ${(props) => props.varjustifycontent || "center"};
@@ -144,6 +145,7 @@ background-color: ${(props) => props.varbackgroundcolor || "#B3282D"};
 color: ${(props) => props.varcolortext || "#ffffff"};
 text-transform: ${(props) => props.varuppercase || "uppercase"};
 width: ${(props) => props.varwidth || "auto"};
+font-weight: ${(props) => props.varweight || "500"};
 max-width: ${(props) => props.varmaxwidth || "100%"};
 padding: ${(props) => props.varpadd || "auto"};
 font-size: ${(props) => props.fontsize || "22px"};
@@ -153,8 +155,9 @@ text-align: ${(props) => props.varalign || "center"};
 align-items: center;
 justify-content:center;
 margin: ${(props) => props.varmargin || "0px"};
-max-width: ${(props) => props.varmaxwidth || "auto"};
 border-radius: ${(props) => props.varborder || "3px"};
+box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.4);
+
 &:hover {
   background-color: ${(props) => props.varbackgroundcolorh || "#00394C"};
   cursor: pointer;
@@ -200,6 +203,20 @@ export const ContainerResultados = styled.div`
   align-items: center;
   justify-content: center;
   background: linear-gradient(to right, #B3282D, #842023, #842023) no-repeat center center fixed;
+  @media (max-width: 1000px) {
+    padding: 50px 0 50px;
+  }
+  @media (max-width: 550px) {
+    
+  }
+`;
+export const ContainerContacto = styled.div`
+  width: 100%;
+  min-height: 248px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   @media (max-width: 1000px) {
     padding: 50px 0 50px;
   }
