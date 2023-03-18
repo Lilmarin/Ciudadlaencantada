@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import FormContacto from "../../Components/FormularioContacto/FormContacto";
-import { Btn, ContainerContacto } from "../../Components/Styled2";
+import { ContainerContacto } from "../../Components/Styled2";
 import "./Contacto.scss";
 
 function Contacto() {

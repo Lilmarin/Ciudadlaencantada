@@ -16,8 +16,13 @@ export const Roboto = styled.p`
   max-width: ${(props) => props.varmaxwidth || "auto"};
   width: ${(props) => props.varwidth || "auto"};
   padding: ${(props) => props.varpadd || "auto"};
+  @media (max-width: 1000px) {
+    width: ${(props) => props.varwidthmil || "auto"};
+  }
   @media (max-width: 500px) {
     font-size: ${(props) => props.fontsizem || "18px"};
+    width: ${(props) => props.varwidthmovil || "auto"};
+    margin: ${(props) => props.varmarginmovil || "auto"};
   }
 `;
 export const Title = styled.p`
@@ -37,10 +42,14 @@ export const Title = styled.p`
   padding: ${(props) => props.varpadd || "auto"};
   @media (max-width: 1000px) {
     padding: ${(props) => props.varpaddi || "auto"};
+    font-size: ${(props) => props.fontsizemil || "auto"};
+    width: ${(props) => props.varwidthmil || "auto"};
   }
   @media (max-width: 500px) {
     text-align: ${(props) => props.varalignt || "center"};
     font-size: ${(props) => props.fontsizem || "26px"};
+    margin: ${(props) => props.varmarginmovil || "0"};
+    
   }
 `;
 
@@ -81,10 +90,11 @@ export const Columnas = styled.div`
   
   @media (max-width: 1000px) {
     grid: ${(props) => props.vargrid || "innerit"};
-    display: ${(props) => props.vardisplay || "flex"};
+    display: ${(props) => props.vardisplaymil || "flex"};
     flex-direction: ${(props) => props.vardirection || "column"};
   }
   @media (max-width: 500px) {
+    width: ${(props) => props.varwidthmovil || "auto"};
     grid: ${(props) => props.vargrid || "innerit"};
     display: ${(props) => props.vardisplay || "flex"};
     flex-direction: ${(props) => props.vardirection || "column-reverse"}; 
