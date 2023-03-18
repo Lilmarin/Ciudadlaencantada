@@ -61,6 +61,7 @@ const Infraestructura = () => {
         <Columnas
         vargridcolumns="10% 89%"
         vardisplay="innerit"
+        vardisplaymil="innerit"
         vardirection="innerit"
         className="padd gridgapcolumns3"
         >
@@ -80,6 +81,7 @@ const Infraestructura = () => {
         <Columnas
         vargridcolumns="10% 89%"
         varmargin="30px 0 30px"
+        vardisplaymil="innerit"
         vardisplay="innerit"
         vardirection="innerit"
         className="padd gridgapcolumns3"
@@ -99,6 +101,7 @@ const Infraestructura = () => {
         <Columnas
         vargridcolumns="10% 89%"
         vardisplay="innerit"
+        vardisplaymil="innerit"
         vardirection="innerit"
         className="padd gridgapcolumns3"
         >
@@ -118,6 +121,7 @@ const Infraestructura = () => {
         vargridcolumns="10% 89%"
         varmargin="30px 0 30px"
         vardisplay="innerit"
+        vardisplaymil="innerit"
         vardirection="innerit"
         className="padd gridgapcolumns3"
         >
