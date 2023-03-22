@@ -36,17 +36,16 @@ function App() {
 
     // Establecer el fondo al cargar la página
     updateBackground();
-
     // Programar la actualización del fondo cada minuto
     const intervalId = setInterval(updateBackground, 15 * 60 * 1000);
-
     // Limpiar el intervalo cuando el componente se desmonte
     return () => clearInterval(intervalId);
+    // eslint-disable-next-line
   }, []);
-
   //fin del cambio de background según la hora
 
   // Cambio de background en Header
+
   const [backgroundImage, setBackgroundImage] = useState(Headerday);
   const [isFirstImage, setIsFirstImage] = useState(true);
   const handleClick = () => {
@@ -70,6 +69,34 @@ function App() {
     });
   };
   //Fin de enlaces a Galeria del sitio web
+  //Enlace a Ubicacion del sitio web
+  const ubicacion = useRef(null);
+  const executeScrollubicacion = () => {
+    window.scrollTo({
+      top: ubicacion.current.offsetTop - 65,
+      behavior: "smooth",
+    });
+  };
+  //Fin de enlaces a Ubicacion del sitio web
+  //Enlace a Amenidades del sitio web
+  const amenidades = useRef(null);
+  const executeScrollamenidades = () => {
+    window.scrollTo({
+      top: amenidades.current.offsetTop - 65,
+      behavior: "smooth",
+    });
+  };
+  //Fin de enlaces a Amenidades del sitio web
+  //Enlace a Infraestructura del sitio web
+  const infraestructura = useRef(null);
+  const executeScrollinfraestructura = () => {
+    window.scrollTo({
+      top: infraestructura.current.offsetTop - 65,
+      behavior: "smooth",
+    });
+  };
+  //Fin de enlaces a infraestructura del sitio web
+
   return (
     <BrowserRouter>
       <Routes>
@@ -84,11 +111,17 @@ function App() {
               backgroundImage={backgroundImage}
               handleClick={handleClick}
               executeScroll={executeScroll}
+              executeScrollubicacion={executeScrollubicacion}
+              executeScrollamenidades={executeScrollamenidades}
+              executeScrollinfraestructura={executeScrollinfraestructura}
             >
               <Home
                 backgroundImage={backgroundImage}
                 handleClick={handleClick}
                 myRef={myRef}
+                ubicacion={ubicacion}
+                amenidades={amenidades}
+                infraestructura={infraestructura}
               />
             </PageWrapper>
           }

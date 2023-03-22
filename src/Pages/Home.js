@@ -19,9 +19,9 @@ const Home = (props) => {
         handleClick={props.handleClick}
       />
       <Galeria myRef={props.myRef} />
-      <Ubicacion />
-      <Amenidades />
-      <Infraestructura />
+      <Ubicacion ubicacion={props.ubicacion} />
+      <Amenidades amenidades={props.amenidades} />
+      <Infraestructura infraestructura={props.infraestructura} />
       <Tamanosterrenos />
       <Presentacion />
       <CLEdesarrollo />

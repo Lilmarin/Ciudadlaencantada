@@ -14,7 +14,7 @@ export const Montserrat = styled.p`
   margin: ${(props) => props.varmargin || "0px"};
   max-width: ${(props) => props.varmaxwidth || "auto"};
   width: ${(props) => props.varwidth || "auto"};
-  @media (max-width: 100px) {
+  @media (max-width: 800px) {
     font-size: ${(props) => props.fontsizem || "16px"};
   }
 `;
@@ -32,8 +32,12 @@ export const Roboto = styled.p`
   margin: ${(props) => props.varmargin || "0px"};
   max-width: ${(props) => props.varmaxwidth || "auto"};
   width: ${(props) => props.varwidth || "auto"};
-  @media (max-width: 100px) {
+  @media (max-width: 800px) {
     font-size: ${(props) => props.fontsizem || "16px"};
+    line-height: ${(props) => props.varlineheightm || "20px"};
+    text-align: ${(props) => props.varalignm || "center"};
+    margin: ${(props) => props.varmarginm || "0px auto"};
+    width: ${(props) => props.varwidthm || "auto"};
   }
 `;
 
@@ -123,5 +127,8 @@ export const BtnRed = styled.div`
   cursor: pointer;
   :hover {
     transform: translateY(-5%);
+  }
+  @media (max-width: 900px) {
+    margin: ${(props) => props.varmarginm || "0px"};
   }
 `;
