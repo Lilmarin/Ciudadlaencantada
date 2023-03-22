@@ -103,6 +103,7 @@ const Presentacion = () => {
             varjustifycontent="center"
             vardirection="column"
             vardisplay = "innerit"
+            vardisplaymil = "innerit"
             >
               <Columna
               >

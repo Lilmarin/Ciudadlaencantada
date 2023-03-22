@@ -1,5 +1,16 @@
 .Section-resultados{
     .img{
         width: 120px;
+        margin: auto;
     }
+    
 }
+
+@media (max-width: 1000px) {
+    
+    .Section-resultados{
+        .gridgap{
+            grid-gap: 33px;
+        } 
+    }
+  }

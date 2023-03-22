@@ -15,13 +15,84 @@ const Resultados = () => {
     >
       <Columnas
       varalignitems="center"
+      vargridcolumns = "25% 25% 25% 25%"
+      className="gridgap"
       >
         <Columna>
           <img src={Propiedades} alt="propiedades vendidas" className="img"></img>
           <Title
           varcolor="#ffffff"
           fontsize="42px"
-          >+1, 000</Title>
+          varalign="center"
+          varjustifycontent="center"
+          >
+            +1, 000
+          </Title>
+          <Title
+          varcolor="#ffffff"
+          fontsize="26px"
+          varweight="500"
+          varjustifycontent="center"
+          >
+            Propiedades vendidas
+          </Title>
+        </Columna>
+        <Columna>
+          <img src={Asesores} alt="propiedades vendidas" className="img"></img>
+          <Title
+          varcolor="#ffffff"
+          fontsize="42px"
+          varalign="center"
+          varjustifycontent="center"
+          >
+            +35
+          </Title>
+          <Title
+          varcolor="#ffffff"
+          fontsize="26px"
+          varweight="500"
+          varjustifycontent="center"
+          >
+            Asesores
+          </Title>
+        </Columna>
+        <Columna>
+          <img src={Creditos} alt="propiedades vendidas" className="img"></img>
+          <Title
+          varcolor="#ffffff"
+          fontsize="42px"
+          varalign="center"
+          varjustifycontent="center"
+          >
+            +300
+          </Title>
+          <Title
+          varcolor="#ffffff"
+          fontsize="26px"
+          varweight="500"
+          varjustifycontent="center"
+          >
+            Créditos generados
+          </Title>
+        </Columna>
+        <Columna>
+          <img src={PropiedadesenLista} alt="propiedades vendidas" className="img"></img>
+          <Title
+          varcolor="#ffffff"
+          fontsize="42px"
+          varalign="center"
+          varjustifycontent="center"
+          >
+            +8, 000
+          </Title>
+          <Title
+          varcolor="#ffffff"
+          fontsize="26px"
+          varweight="500"
+          varjustifycontent="center"
+          >
+            Propiedades en lista
+          </Title>
         </Columna>
       </Columnas>
     </ContainerResultados>
