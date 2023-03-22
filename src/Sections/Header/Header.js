@@ -21,6 +21,7 @@ const Header = (props) => {
         varcolor="#FFFFFF"
         varweight="700"
         varmargin="10px auto 0 5.75%"
+        fontsizem="38px"
       >
         CIUDAD LA ENCANTADA
       </Montserrat>
@@ -31,19 +32,25 @@ const Header = (props) => {
         varmargin="10px auto 0 5.75%"
         varalign="left"
         varlineheight="32px"
+        fontsizem="16px"
+        varalignm="center"
+        varmarginm="20px auto 30px"
+        varwidthm="80%"
       >
         Vive en un entorno de armonía y seguridad, con una ubicación
         priviligiada en Gómez Palacio. Amenidades, tecnología e infrastructura
         de vanguardia.
       </Roboto>
-      <BtnRed varmargin="40px auto 250px 5.75%">CONTÁCTANOS</BtnRed>
+      <BtnRed varmargin="40px auto 250px 5.75%" varmarginm="40px auto 50px">
+        CONTÁCTANOS
+      </BtnRed>
       <Grid
         className="Bottoom-box-caracteristicas"
         container
         columnSpacing={{ xs: 0, sm: 2, md: 3 }}
       >
         <Grid item xs={12} sm={6} md={3} className="grid-item-card">
-          <img src={Terrenosresidenciales} />
+          <img alt="Terrenos residenciales" src={Terrenosresidenciales} />
           <Montserrat
             varweight="600"
             fontsize="28px"
@@ -62,7 +69,7 @@ const Header = (props) => {
           </Montserrat>
         </Grid>
         <Grid item xs={12} sm={6} md={3} className="grid-item-card">
-          <img src={Ubicacion} />
+          <img alt="Ubicacion" src={Ubicacion} />
           <Montserrat
             varweight="600"
             fontsize="28px"
@@ -81,7 +88,7 @@ const Header = (props) => {
           </Montserrat>
         </Grid>
         <Grid item xs={12} sm={6} md={3} className="grid-item-card">
-          <img src={Ciclovia} />
+          <img alt="Ciclovia" src={Ciclovia} />
           <Montserrat
             varweight="600"
             fontsize="28px"
@@ -100,7 +107,7 @@ const Header = (props) => {
           </Montserrat>
         </Grid>
         <Grid item xs={12} sm={6} md={3} className="grid-item-card">
-          <img src={Plazacentral} />
+          <img alt="Plaza Central" src={Plazacentral} />
           <Montserrat
             varweight="600"
             fontsize="28px"
