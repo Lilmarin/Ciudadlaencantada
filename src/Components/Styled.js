@@ -14,7 +14,7 @@ export const Montserrat = styled.p`
   margin: ${(props) => props.varmargin || "0px"};
   max-width: ${(props) => props.varmaxwidth || "auto"};
   width: ${(props) => props.varwidth || "auto"};
-  @media (max-width: 100px) {
+  @media (max-width: 800px) {
     font-size: ${(props) => props.fontsizem || "16px"};
   }
 `;
@@ -32,8 +32,12 @@ export const Roboto = styled.p`
   margin: ${(props) => props.varmargin || "0px"};
   max-width: ${(props) => props.varmaxwidth || "auto"};
   width: ${(props) => props.varwidth || "auto"};
-  @media (max-width: 100px) {
+  @media (max-width: 800px) {
     font-size: ${(props) => props.fontsizem || "16px"};
+    line-height: ${(props) => props.varlineheightm || "20px"};
+    text-align: ${(props) => props.varalignm || "center"};
+    margin: ${(props) => props.varmarginm || "0px auto"};
+    width: ${(props) => props.varwidthm || "auto"};
   }
 `;
 
@@ -107,7 +111,7 @@ export const Griditem = styled.div`
 export const BtnRed = styled.div`
   background-color: ${(props) => props.backgcolor || "#b3282d"};
   color: ${(props) => props.varcolor || "#FFFFFF"};
-  padding: ${(props) => props.varmargin || "18px 36px"};
+  padding: ${(props) => props.varpadding || "8px 10px"};
   margin: ${(props) => props.varmargin || "0px"};
   font-size: ${(props) => props.varfontsize || "16px"};
   font-family: ${(props) => props.varfontfamily || "Montserrat"};
@@ -123,5 +127,8 @@ export const BtnRed = styled.div`
   cursor: pointer;
   :hover {
     transform: translateY(-5%);
+  }
+  @media (max-width: 900px) {
+    margin: ${(props) => props.varmarginm || "0px"};
   }
 `;

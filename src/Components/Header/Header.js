@@ -6,7 +6,13 @@ import { Grid } from "@mui/material";
 import { Montserrat } from "../Styled";
 import SwitchButton from "./SwitchButton/SwitchButton";
 
-const Header = ({ handleClick, executeScroll }) => {
+const Header = ({
+  handleClick,
+  executeScroll,
+  executeScrollubicacion,
+  executeScrollamenidades,
+  executeScrollinfraestructura,
+}) => {
   var elemento = document.getElementById("navbar-upper");
   window.onscroll = function () {
     var desplazamiento = window.pageYOffset; // Cantidad de desplazamiento de la página
@@ -24,25 +30,56 @@ const Header = ({ handleClick, executeScroll }) => {
   const specialFunction = () => {
     setIsOpen(!isOpen);
     executeScroll();
+    toggleComponent(false);
+  };
+  const specialFunction2 = () => {
+    setIsOpen(!isOpen);
+    executeScrollubicacion();
+    toggleComponent(false);
+  };
+  const specialFunction3 = () => {
+    setIsOpen(!isOpen);
+    executeScrollamenidades();
+    toggleComponent(false);
+  };
+  const specialFunction4 = () => {
+    setIsOpen(!isOpen);
+    executeScrollinfraestructura();
   };
   const enlaces = [
     { id: 1, texto: "Galeria", url: specialFunction },
-    { id: 2, texto: "Ubicación", url: specialFunction },
-    { id: 3, texto: "Amenidades", url: specialFunction },
-    { id: 4, texto: "Infraestructura", url: specialFunction },
+    { id: 2, texto: "Ubicación", url: specialFunction2 },
+    { id: 3, texto: "Amenidades", url: specialFunction3 },
+    { id: 4, texto: "Infraestructura", url: specialFunction4 },
     { id: 3, texto: "Precios", url: specialFunction },
     { id: 4, texto: "Comercializador", url: specialFunction },
   ];
+
+  const [showComponent, setShowComponent] = useState(false);
+
+  function toggleComponent() {
+    setShowComponent(!showComponent);
+  }
   return (
     <div className="Header-Container-CLE">
       <div id="navbar-upper" className="Header-upper">
         <Grid className="Grid-Links" container spacing={2}>
-          <Grid className="Grid-Items-Header" item md={2}>
+          <Grid
+            className="Grid-Items-Header logo-container"
+            item
+            md={2}
+            sm={6}
+            xs={6}
+          >
             <a href="https://ciudadlaencantada.com">
-              <img alt="Ciudad La Encantada" src={CLELogo}></img>
+              <img
+                className="logo-img"
+                alt="Ciudad La Encantada"
+                src={CLELogo}
+              ></img>
             </a>
           </Grid>
-          <Grid className="Grid-Items-Header" item md={7}>
+          <Grid className="Grid-Items-Header" item md={7} sm={0} xs={0}>
             <div className="Grid-links-uls">
               {" "}
               <ul>
@@ -50,7 +87,7 @@ const Header = ({ handleClick, executeScroll }) => {
                   <NavLink className="Enlace-linked" onClick={e.url}>
                     <Montserrat
                       fontsize="18px"
-                      varcolor="#333333"
+                      varcolor="#000000"
                       varweight="600"
                     >
                       {" "}
@@ -61,15 +98,15 @@ const Header = ({ handleClick, executeScroll }) => {
               </ul>
             </div>
           </Grid>
-          <Grid className="Grid-Items-Header" item md={1}>
+          <Grid className="Grid-Items-Header" item md={1} sm={2} xs={2}>
             <button className="button-closed" onClick={handleClick}>
               <SwitchButton />
             </button>
           </Grid>
-          <Grid className="Grid-Items-Header" item md={2}>
+          <Grid className="Grid-Items-Header" item md={2} sm={2} xs={2}>
             <div className="Phone-Whats-Item">
               {" "}
-              <a>
+              <a href="https://enlacependiente">
                 <svg
                   width="39"
                   height="36"
@@ -111,7 +148,7 @@ const Header = ({ handleClick, executeScroll }) => {
                   stroke-width="2"
                 />
               </svg>
-              <a>
+              <a href="https://enlacependiente">
                 <svg
                   width="52"
                   height="50"
@@ -130,9 +167,61 @@ const Header = ({ handleClick, executeScroll }) => {
                 </svg>
               </a>
             </div>
+            <div className="hamburguer">
+              <button onClick={toggleComponent}>
+                <hr></hr>
+                <hr></hr>
+                <hr></hr>
+              </button>
+            </div>
           </Grid>
         </Grid>
       </div>
+      {showComponent && (
+        <div className="Menu-Hamburguer-Superior">
+          <button onClick={toggleComponent}>
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 37 37"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.81932 9.50926L27.7246 27.4146"
+                stroke="black"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M27.7236 9.50926L9.81836 27.4145"
+                stroke="black"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div className="Menu-hamburguer">
+            <div className="Grid-links-uls">
+              {" "}
+              <ul>
+                {enlaces.map((e) => (
+                  <NavLink className="Enlace-linked" onClick={e.url}>
+                    <Montserrat
+                      fontsize="18px"
+                      varcolor="#333333"
+                      varweight="600"
+                    >
+                      {" "}
+                      {e.texto}
+                    </Montserrat>
+                  </NavLink>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
