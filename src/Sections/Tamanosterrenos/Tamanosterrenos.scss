@@ -1,0 +1,46 @@
+.Tamanos-Terrenos {
+  background-color: #f5f5f5;
+  .tamanos-container {
+    margin: 20px auto;
+    width: 99.8%;
+    .tamanos-item {
+      min-height: auto;
+      &.uno {
+        margin-bottom: 34px;
+        min-height: 580px;
+        background-image: url("../../assets/img/Ciudadlaencantada_Map.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      &.dos {
+        background-image: url("../../assets/img/grupo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-color: #f5f5f5;
+        border: solid 10px #d9d9d9;
+      }
+      &.tres {
+        padding-top: 0;
+        max-width: 65%;
+        margin: 0 0 0 auto;
+        .backgrounds-containers {
+          height: 300px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%;
+          &.imagen-uno {
+            background-image: url("../../assets/img/CIUDAD_ENCANTADA_TAMANOS_RENDER1.png");
+          }
+          &.imagen-dos {
+            background-image: url("../../assets/img/CIUDAD_ENCANTADA_TAMANOS_RENDER2.png");
+          }
+          &.imagen-tres {
+            background-image: url("../../assets/img/CIUDAD_ENCANTADA_TAMANOS_RENDER3.png");
+          }
+        }
+      }
+    }
+  }
+}
