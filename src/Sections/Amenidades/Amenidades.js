@@ -10,9 +10,10 @@ import {
   Roboto,
 } from "../../Components/Styled";
 
-const Amenidades = () => {
+const Amenidades = ({ amenidades }) => {
   return (
     <Backgroundbigcontainer
+      ref={amenidades}
       className="Amenidades"
       varpadding="77px 0 118px"
       varbackgroundcolor="#F5F5F5"

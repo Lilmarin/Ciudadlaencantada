@@ -1,25 +1,46 @@
-.Header-Background-CLE{
-    background-image: url("../../assets/img/CIUDAD_ENCANTADA_HOME_HEADER_DIA.png");
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-end;
-    display: flex;
-    flex-direction: column;
-    .Bottoom-box-caracteristicas{
-        width: 88.5%;
-        min-height: 300px;
-        position: absolute;
-        margin-left: 0;
+.Header-Background-CLE {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_HOME_HEADER_DIA.png");
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 900px) {
+    padding-top: 10em;
+    height: 82vh;
+    margin-bottom: 49em;
+  }
+  .Bottoom-box-caracteristicas {
+    width: 88.5%;
+    min-height: 300px;
+    position: absolute;
+    margin-left: 0;
     bottom: -225px;
-    .grid-item-card{
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 0;
-        background-image: url("../../assets/img/CIUDAD_ENCANTADA_HEADER_SECTION_BACKGROUND.png"); 
-        img{    margin-bottom: 20px;}    }
-        
+    @media (max-width: 900px) {
+      width: 85%;
+      position: relative;
+      bottom: -275px;
     }
+    .grid-item-card {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 0;
+      background-image: url("../../assets/img/CIUDAD_ENCANTADA_HEADER_SECTION_BACKGROUND.png");
+
+      @media (max-width: 900px) {
+        padding: 40px 0 30px;
+      }
+
+      img {
+        margin-bottom: 20px;
+
+        @media (max-width: 900px) {
+          max-height: 55px;
+        }
+      }
+    }
+  }
 }
