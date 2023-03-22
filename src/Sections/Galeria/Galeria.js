@@ -2,11 +2,14 @@ import "./Galeria.scss";
 
 import React, { useState } from "react";
 
-function Galeria(props) {
+  const Galeria = () => {
+    return (
+      <div className="Galeria-Container">
+        Galeria
+     </div>
+    )
  
-  
- 
-}
+};
 
 
 
