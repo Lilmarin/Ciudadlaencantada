@@ -30,17 +30,14 @@ const Header = ({
   const specialFunction = () => {
     setIsOpen(!isOpen);
     executeScroll();
-    toggleComponent(false);
   };
   const specialFunction2 = () => {
     setIsOpen(!isOpen);
     executeScrollubicacion();
-    toggleComponent(false);
   };
   const specialFunction3 = () => {
     setIsOpen(!isOpen);
     executeScrollamenidades();
-    toggleComponent(false);
   };
   const specialFunction4 = () => {
     setIsOpen(!isOpen);
