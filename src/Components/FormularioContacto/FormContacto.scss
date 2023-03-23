@@ -35,6 +35,9 @@
     
   }
    
+  .displaynoneemailmovil{
+    display: none;
+  }
   .popup-content-items{
     width: 80%;
     max-width: 1109px;
@@ -148,6 +151,13 @@
 
   @media screen and (max-width: 500px) and (min-width: 100px) {
     
+    .displaynoneemail{
+      display: none;
+    }
+    .displaynoneemailmovil{
+      display: inline-block;
+      width: 100%;
+    }
     .popup-content-items{
         width: 90%;
       }
@@ -191,6 +201,9 @@
 
   @media screen and (max-width: 1000px) and (min-width: 500px) {
 
+    .displaynoneemailmovil{
+      display: none;
+    }
   .conexionesgridgap{
     grid-gap: 10px;
   }

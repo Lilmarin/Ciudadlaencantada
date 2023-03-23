@@ -53,6 +53,18 @@ export const Title = styled.p`
   }
 `;
 
+export const Line = styled.div`
+  min-height: ${(props) => props.varminheight || "4px"};
+  min-width: ${(props) => props.varmaxwidth || "120px"};
+
+  max-width: ${(props) => props.varmaxwidth || "120px"};
+  background-color: ${(props) => props.backgroundcolor || "#B3282D"};
+  @media (max-width: 500px) {
+    min-width: ${(props) => props.varmaxwidthmovil || "60px"};
+    max-width: ${(props) => props.varmaxwidthmovil || "60px"};
+  }
+`;
+
 //Botones
 export const CLE_Button = styled.div`
   background-color: pink;
@@ -94,6 +106,7 @@ export const Columnas = styled.div`
     flex-direction: ${(props) => props.vardirection || "column"};
   }
   @media (max-width: 500px) {
+    grid-template-columns: ${(props) => props.vargridcolumnsmovil || (props.vargridcolumns)};
     width: ${(props) => props.varwidthmovil || "auto"};
     grid: ${(props) => props.vargrid || "innerit"};
     display: ${(props) => props.vardisplay || "flex"};
@@ -105,6 +118,10 @@ export const Columna = styled.div`
   width: 100%;
   display:flex;
   flex-direction: column;
+  @media (max-width: 800px) {
+  margin: ${(props) => props.varmarginmovil || "0px"};
+  width: ${(props) => props.varwidthmovil || "100%"};
+  }
 `;
 
 export const ColumnsImage = styled.div`

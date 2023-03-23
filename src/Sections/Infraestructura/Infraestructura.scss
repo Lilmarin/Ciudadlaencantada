@@ -96,6 +96,10 @@
     padding: 20px 0 80px;
     min-height: 400px;
     height: 1330px;
+    #icon{
+      min-width: 30px;
+      margin-top: 5px;
+    }
   }
 }
 @media screen and (max-width: 1000px) and (min-width: 100px) {
