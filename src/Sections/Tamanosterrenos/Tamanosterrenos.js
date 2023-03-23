@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import FormContacto from "../../Components/FormularioContacto/FormContacto";
+import "../Contacto/Contacto.scss";
+
 import "./Tamanosterrenos.scss";
 import {
   Backgroundbigcontainer,
@@ -13,6 +16,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Tamanosterrenos = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  function togglePopup() {
+    setShowPopup(!showPopup);
+  }
+  
   // const [currentSlide, setCurrentSlide] = React.useState(0);
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -108,17 +117,18 @@ const Tamanosterrenos = () => {
             </Slider>
           </Grid>
         </Grid>
-        <BtnRed varmargin="40px 0px 40px auto" varmarginm="40px auto">
-          <Montserrat
-            varweight="600"
-            fontsize="20px"
-            fontsizem="14px"
-            varmargin="20px auto"
-            varcolor="#ffffff"
-          >
-            CONTACTAR ASESOR EXPRESS
-          </Montserrat>
-        </BtnRed>
+        <button
+          className="button-contacto derecha"
+          onClick={togglePopup}
+        >
+          Contactar un asesor express
+        </button>
+        {showPopup && (
+          <FormContacto
+            closePopup={togglePopup}
+          />
+        )}
+        
       </Containeramenidades>
     </Backgroundbigcontainer>
   );
