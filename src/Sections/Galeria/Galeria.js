@@ -80,7 +80,6 @@ const Galeria = ({galeria}) => {
         <Columna>
         <Carousel
           images={images}
-          className="gridgapSlider"
         />
         </Columna>
       </Columnas>

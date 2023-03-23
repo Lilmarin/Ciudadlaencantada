@@ -11,6 +11,7 @@ import Resultados from "../Sections/Resultados/Resultados";
 import Tamanosterrenos from "../Sections/Tamanosterrenos/Tamanosterrenos";
 import Ubicacion from "../Sections/Ubicacion/Ubicacion";
 
+
 const Home = (props) => {
   return (
     <div>
@@ -28,6 +29,7 @@ const Home = (props) => {
       <Propiedadesmexico />
       <Resultados />
       <Contacto />
+      
     </div>
   );
 };
