@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Tamanosterrenos.scss";
 import {
   Backgroundbigcontainer,
@@ -13,12 +13,45 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Tamanosterrenos = () => {
+  // const [currentSlide, setCurrentSlide] = React.useState(0);
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [paginationDots, setPaginationDots] = useState([]);
+
+  useEffect(() => {
+    const newDots = [];
+    for (let i = 0; i < 3; i++) {
+      const isActive = i === currentSlide;
+      const dotStyle = {
+        backgroundColor: isActive ? "red" : "grey",
+        width: "10px",
+        height: "10px",
+        borderRadius: "50%",
+        margin: "0 5px",
+      };
+      newDots.push(<div key={i} style={dotStyle} />);
+    }
+    setPaginationDots(newDots);
+  }, [currentSlide]);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
+    // customPaging: () => paginationDots,
+    customPaging: (index) => {
+      const isActive = index === currentSlide;
+      const dotStyle = {
+        backgroundColor: isActive ? "#B3282D" : "#FFFFFF99",
+        width: "30px",
+        height: "8px",
+        marginTop: "-1.7em",
+      };
+      return <div style={dotStyle} onClick={() => setCurrentSlide(index)} />;
+    },
+
     responsive: [
       {
         breakpoint: 768,
@@ -76,7 +109,15 @@ const Tamanosterrenos = () => {
           </Grid>
         </Grid>
         <BtnRed varmargin="40px 0px 40px auto" varmarginm="40px auto">
-          CONTACTAR ASESOR EXPRESS
+          <Montserrat
+            varweight="600"
+            fontsize="20px"
+            fontsizem="14px"
+            varmargin="20px auto"
+            varcolor="#ffffff"
+          >
+            CONTACTAR ASESOR EXPRESS
+          </Montserrat>
         </BtnRed>
       </Containeramenidades>
     </Backgroundbigcontainer>

@@ -41,8 +41,17 @@ const Header = (props) => {
         priviligiada en Gómez Palacio. Amenidades, tecnología e infrastructura
         de vanguardia.
       </Roboto>
+
       <BtnRed varmargin="40px auto 250px 5.75%" varmarginm="40px auto 50px">
-        CONTÁCTANOS
+        <Montserrat
+          varweight="600"
+          fontsize="20px"
+          fontsizem="14px"
+          varmargin="20px auto"
+          varcolor="#ffffff"
+        >
+          CONTÁCTANOS
+        </Montserrat>
       </BtnRed>
       <Grid
         className="Bottoom-box-caracteristicas"

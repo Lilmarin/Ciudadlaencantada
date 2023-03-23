@@ -12,6 +12,9 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
+        @media (max-width: 900px) {
+          min-height: 170px;
+        }
       }
       &.dos {
         background-image: url("../../assets/img/grupo.png");
@@ -25,11 +28,34 @@
         padding-top: 0;
         max-width: 65%;
         margin: 0 0 0 auto;
+        padding-left: 0;
+        @media (max-width: 900px) {
+          max-width: 100%;
+          padding-left: 0;
+          margin-top: 1.5em;
+        }
+        .slick-arrow {
+          display: none !important;
+        }
+        .slick-prev {
+          display: none !important;
+        }
+        .slick-slider {
+          .slick-dots {
+            li {
+              margin: 0 15px;
+            }
+          }
+        }
+
         .backgrounds-containers {
           height: 300px;
           background-repeat: no-repeat;
           background-position: center;
           background-size: 100%;
+          @media (max-width: 900px) {
+            height: 150px;
+          }
           &.imagen-uno {
             background-image: url("../../assets/img/CIUDAD_ENCANTADA_TAMANOS_RENDER1.png");
           }
