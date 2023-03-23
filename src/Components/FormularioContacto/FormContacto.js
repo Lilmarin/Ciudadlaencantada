@@ -117,6 +117,7 @@ function Popup(props) {
                 
                 <Columnas
                 vargridcolumns="15% 30% 40%"
+                vargridcolumnsmovil="27% 65%"
                 className='gridgapnumber'
                 vargrid="grid"
                 vardisplay="grid"
@@ -131,11 +132,16 @@ function Popup(props) {
                     <label for="phone">Número</label>
                     <input type="number" id="phone" name="phone" required placeholder='55 55 55 55'></input>
                   </Columna>
-                  <Columna>
+                  <Columna className='displaynoneemail'>
                   <label for="email">Email</label>
                   <input type="email" id="email" name="email" required placeholder='ricardo@LicenciaAPI.com'></input>
                   </Columna>
                 </Columnas>
+
+                <div className='displaynoneemailmovil'>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required placeholder='ricardo@LicenciaAPI.com'></input>
+                </div>
                 
                 <label for="message">¿Quieres dejarnos algún mensaje?</label>
                 <textarea id="message" name="message" rows="5" required placeholder='Hola, Estoy interesado en...'></textarea>

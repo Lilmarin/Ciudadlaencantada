@@ -106,6 +106,7 @@ export const Columnas = styled.div`
     flex-direction: ${(props) => props.vardirection || "column"};
   }
   @media (max-width: 500px) {
+    grid-template-columns: ${(props) => props.vargridcolumnsmovil || (props.vargridcolumns)};
     width: ${(props) => props.varwidthmovil || "auto"};
     grid: ${(props) => props.vargrid || "innerit"};
     display: ${(props) => props.vardisplay || "flex"};
