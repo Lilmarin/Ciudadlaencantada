@@ -42,6 +42,19 @@
     .gridgapSlider{
       grid-gap: 30px;
     }
+    .slick-arrow {
+      display: none !important;
+    }
+    .slick-prev {
+      display: none !important;
+    }
+    .slick-slider {
+      .slick-dots {
+        li {
+          margin: 0 15px;
+        }
+      }
+    }
   }
 }
 
