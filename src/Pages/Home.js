@@ -18,7 +18,7 @@ const Home = (props) => {
         backgroundImage={props.backgroundImage}
         handleClick={props.handleClick}
       />
-      <Galeria myRef={props.myRef} />
+      <Galeria galeria={props.galeria} />
       <Ubicacion ubicacion={props.ubicacion} />
       <Amenidades amenidades={props.amenidades} />
       <Infraestructura infraestructura={props.infraestructura} />
