@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import Headerday from "./assets/img/CIUDAD_ENCANTADA_HOME_HEADER_DIA.png";
 import Headernight from "./assets/img/CIUDAD_ENCANTADA_HOME_HEADER_NOCHE.png";
 import moment from "moment";
+import WhatsappButton from "./Components/WhatsappButton";
 
 function App() {
   //Cambio de background según la hora
@@ -123,6 +124,8 @@ function App() {
                 amenidades={amenidades}
                 infraestructura={infraestructura}
               />
+              
+              <WhatsappButton />
             </PageWrapper>
           }
         ></Route>
