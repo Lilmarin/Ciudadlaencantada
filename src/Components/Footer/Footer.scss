@@ -1,0 +1,84 @@
+.footer-component {
+  background-color: #e4e4e4;
+  @media (max-width: 900px) {
+    padding-top: 52px;
+  }
+  .inside-footer {
+    width: 100%;
+    &.first {
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 900px) {
+        padding-bottom: 52px;
+      }
+      .footer-item-grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          cursor: pointer;
+          text-decoration: none;
+          :hover {
+            transform: translateY(-5%);
+          }
+        }
+        svg {
+          margin: 0 0.7em;
+          @media (max-width: 900px) {
+            margin: 1em 1.3em 0em;
+          }
+        }
+        &.uno {
+          a {
+            img {
+              @media (max-width: 900px) {
+                min-width: 240px;
+              }
+            }
+          }
+        }
+        &.dos {
+          flex-direction: column;
+        }
+        // &.tres {
+
+        // }
+      }
+    }
+    &.second {
+      background-color: #b3282d;
+      min-height: 89px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      .grid-content {
+        max-width: 1644px;
+        width: 85%;
+        .footer-item-grid {
+          display: flex;
+          align-items: center;
+          a {
+            color: #ffffff;
+            cursor: pointer;
+            text-decoration: none;
+            :hover {
+              transform: translateY(-5%);
+            }
+          }
+          &.uno {
+            justify-content: start;
+          }
+          &.dos {
+            justify-content: end;
+            .figmaandreact {
+              margin-left: 0.8em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
