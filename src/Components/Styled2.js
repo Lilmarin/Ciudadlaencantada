@@ -167,7 +167,7 @@ export const Containerpresentacion = styled.div`
     margin:auto
   }
 `;
-export const Btn = styled.div`
+export const Btn = styled.button`
 background-color: ${(props) => props.varbackgroundcolor || "#B3282D"};
 color: ${(props) => props.varcolortext || "#ffffff"};
 text-transform: ${(props) => props.varuppercase || "uppercase"};
@@ -247,7 +247,24 @@ export const ContainerContacto = styled.div`
   @media (max-width: 1000px) {
     padding: 50px 0 50px;
   }
-  @media (max-width: 550px) {
-    
-  }
+`;
+
+export const BtnWhatsApp = styled.button`
+  position: absolute;
+  z-index: 99;
+  border:none;
+  background:none;
+  position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+  padding-top: 15px;
+  margin-bottom: 0;
+  &:hover {
+  cursor: pointer;
+  transform:translate(3px);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-7px);
+  border-radius: 96%
+} 
 `;

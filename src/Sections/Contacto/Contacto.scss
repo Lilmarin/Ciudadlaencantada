@@ -22,4 +22,44 @@
     &.derecha{
       margin: 1em 0 0 auto;
     }
+    &.headerbtn{
+      margin: 40px auto 250px 5.75%;
+      font-size: 18px;
+    }
+    &.presentacionbtn{
+      width: 280px; max-width: 100%;
+      font-size: 18px;
+      padding: 20px 20px 20px;
+      margin: 20px 0 20px;
+    }
+    &.desarrollobtn{
+      background-color: #00394C;
+      width: 320px;
+      padding: 15px 0 15px;
+      margin: 30px 0 30px;
+      font-weight: 530;
+    }
+  }
+
+  .desarrollo :hover{
+    background-color: black;
+  }
+
+  @media screen and (max-width: 500px) and (min-width: 100px) {
+    .button-contacto{
+      font-size: 16px;
+      width: 80%;
+      padding: 15px;
+    &.derecha{
+      font-size: 18px;
+    }
+    
+    &.presentacionbtn{
+      width: 88%; max-width: 100%;
+      font-size: 16px;
+      padding: 15px 5px 15px;
+      margin: 20px 20px 20px;
+    }
+   }
+    
   }
