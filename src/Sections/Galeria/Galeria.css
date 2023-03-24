@@ -1,4 +1,50 @@
 .Galeria-Container {
   margin-top: 225px;
-  background-color: pink;
+  background-image: url();
+  display: flex;
+  min-height: 700px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/img/CIUDAD_ENCANTALA_GALERIA_BACKGROUND.png");
+}
+.Galeria-Container .imagenCarrusel {
+  width: 98%;
+  height: 100%;
+  margin: 15px;
+}
+.Galeria-Container .containerImage {
+  max-width: 342px;
+  height: 475px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .Galeria-Container {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 100px) {
+  .Galeria-Container {
+    min-height: 630px;
+  }
+  .Galeria-Container .containerImage {
+    width: 225px;
+    height: 260px;
+    overflow: hidden;
+  }
+  .Galeria-Container .imagenCarrusel {
+    width: 100%;
+  }
+  .Galeria-Container .gridgapSlider {
+    grid-gap: 30px;
+  }
+  .Galeria-Container .slick-arrow {
+    display: none !important;
+  }
+  .Galeria-Container .slick-prev {
+    display: none !important;
+  }
+  .Galeria-Container .slick-slider .slick-dots li {
+    margin: 0 15px;
+  }
 }/*# sourceMappingURL=Galeria.css.map */

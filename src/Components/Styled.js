@@ -57,6 +57,9 @@ export const Backgroundbigcontainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (max-width: 900px) {
+    padding: ${(props) => props.varpaddingm || "0px"};
+  }
 `;
 
 export const Containeramenidades = styled.div`

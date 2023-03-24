@@ -57,6 +57,9 @@
       .grid-content {
         max-width: 1644px;
         width: 85%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         .footer-item-grid {
           display: flex;
           align-items: center;
@@ -70,11 +73,32 @@
           }
           &.uno {
             justify-content: start;
-          }
-          &.dos {
-            justify-content: end;
+            flex-direction: column;
             .figmaandreact {
               margin-left: 0.8em;
+              &.mobile {
+                display: none;
+                @media (max-width: 900px) {
+                  display: inline;
+                  margin: 20px auto;
+                }
+              }
+            }
+          }
+          &.dos {
+            justify-content: center;
+            align-items: center;
+            @media (max-width: 900px) {
+              padding-bottom: 30px;
+            }
+            .figmaandreact {
+              margin-left: 0.8em;
+              &.web {
+                display: inline;
+                @media (max-width: 900px) {
+                  display: none;
+                }
+              }
             }
           }
         }

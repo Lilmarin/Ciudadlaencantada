@@ -1,0 +1,83 @@
+.footer-component {
+  background-color: #e4e4e4;
+}
+@media (max-width: 900px) {
+  .footer-component {
+    padding-top: 52px;
+  }
+}
+.footer-component .inside-footer {
+  width: 100%;
+}
+.footer-component .inside-footer.first {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  .footer-component .inside-footer.first {
+    padding-bottom: 52px;
+  }
+}
+.footer-component .inside-footer.first .footer-item-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-component .inside-footer.first .footer-item-grid a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer-component .inside-footer.first .footer-item-grid a :hover {
+  transform: translateY(-5%);
+}
+.footer-component .inside-footer.first .footer-item-grid svg {
+  margin: 0 0.7em;
+}
+@media (max-width: 900px) {
+  .footer-component .inside-footer.first .footer-item-grid svg {
+    margin: 1em 1.3em 0em;
+  }
+}
+@media (max-width: 900px) {
+  .footer-component .inside-footer.first .footer-item-grid.uno a img {
+    min-width: 240px;
+  }
+}
+.footer-component .inside-footer.first .footer-item-grid.dos {
+  flex-direction: column;
+}
+.footer-component .inside-footer.second {
+  background-color: #b3282d;
+  min-height: 89px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.footer-component .inside-footer.second .grid-content {
+  max-width: 1644px;
+  width: 85%;
+}
+.footer-component .inside-footer.second .grid-content .footer-item-grid {
+  display: flex;
+  align-items: center;
+}
+.footer-component .inside-footer.second .grid-content .footer-item-grid a {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer-component .inside-footer.second .grid-content .footer-item-grid a :hover {
+  transform: translateY(-5%);
+}
+.footer-component .inside-footer.second .grid-content .footer-item-grid.uno {
+  justify-content: start;
+}
+.footer-component .inside-footer.second .grid-content .footer-item-grid.dos {
+  justify-content: end;
+}
+.footer-component .inside-footer.second .grid-content .footer-item-grid.dos .figmaandreact {
+  margin-left: 0.8em;
+}/*# sourceMappingURL=Footer.css.map */

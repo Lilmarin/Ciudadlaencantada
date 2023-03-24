@@ -17,6 +17,7 @@ const Amenidades = ({ amenidades }) => {
       className="Amenidades"
       varpadding="77px 0 118px"
       varbackgroundcolor="#F5F5F5"
+      varpaddingm="0px 0px 50px"
     >
       <Containeramenidades>
         <Littleline />

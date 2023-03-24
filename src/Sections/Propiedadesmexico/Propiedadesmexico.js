@@ -16,6 +16,7 @@ const Propiedadesmexico = () => {
     <Backgroundbigcontainer
       varbackgroundcolor="#F5F5F5"
       varpadding="100px 0 100px"
+      varpaddingm="50px 0 70px"
     >
       <section className="Section-Propiedadesmexico">
         <div id="sizeContent2">
