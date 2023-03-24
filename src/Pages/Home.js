@@ -11,6 +11,7 @@ import Resultados from "../Sections/Resultados/Resultados";
 import Tamanosterrenos from "../Sections/Tamanosterrenos/Tamanosterrenos";
 import Ubicacion from "../Sections/Ubicacion/Ubicacion";
 
+
 const Home = (props) => {
   return (
     <div>
@@ -18,7 +19,7 @@ const Home = (props) => {
         backgroundImage={props.backgroundImage}
         handleClick={props.handleClick}
       />
-      <Galeria myRef={props.myRef} />
+      <Galeria galeria={props.galeria} />
       <Ubicacion ubicacion={props.ubicacion} />
       <Amenidades amenidades={props.amenidades} />
       <Infraestructura infraestructura={props.infraestructura} />
@@ -28,6 +29,7 @@ const Home = (props) => {
       <Propiedadesmexico />
       <Resultados />
       <Contacto />
+      
     </div>
   );
 };

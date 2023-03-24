@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import FormContacto from "../../Components/FormularioContacto/FormContacto";
+import "../Contacto/Contacto.scss";
+
 import "./HeaderSection.scss";
 import { Grid } from "@mui/material";
-import { BtnRed, Montserrat, Roboto } from "../../Components/Styled";
+import { Montserrat, Roboto } from "../../Components/Styled";
 import Terrenosresidenciales from "../../assets/img/CIUDAD_ENCANTADA_HOME_HEADER_TERRENOS_RESIDENCIALES.png";
 import Ciclovia from "../../assets/img/CIUDAD_ENCANTADA_HOME_HEADER_CICLOVIA.png";
 import Ubicacion from "../../assets/img/CIUDAD_ENCANTADA_HOME_HEADER_UBICACION.png";
 import Plazacentral from "../../assets/img/CIUDAD_ENCANTADA_HOME_HEADER_PLAZACENTRAL.png";
 
 const Header = (props) => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  function togglePopup() {
+    setShowPopup(!showPopup);
+  }
   return (
     <div
       className="Header-Background-CLE"
@@ -41,9 +49,12 @@ const Header = (props) => {
         priviligiada en Gómez Palacio. Amenidades, tecnología e infrastructura
         de vanguardia.
       </Roboto>
-      <BtnRed varmargin="40px auto 250px 5.75%" varmarginm="40px auto 50px">
+
+      <button className="button-contacto headerbtn" onClick={togglePopup}>
         CONTÁCTANOS
-      </BtnRed>
+      </button>
+      {showPopup && <FormContacto closePopup={togglePopup} />}
+
       <Grid
         className="Bottoom-box-caracteristicas"
         container

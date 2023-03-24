@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import FormContacto from "../../Components/FormularioContacto/FormContacto";
+import "../Contacto/Contacto.scss";
+
 import { Littleline } from "../../Components/Styled";
 import {
   ConteinerCLEdesarrollo,
   Columnas,
   Columna,
   Roboto,
-  Btn,
 } from "../../Components/Styled2";
 import "./CLEdesarrollo.scss";
 
 let logo_CLEdesarrollo = require("../../assets/img/CIUDAD_ENCANTADA_LOGO.png");
 
 const CLEdesarrollo = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  function togglePopup() {
+    setShowPopup(!showPopup);
+  }
   return (
     <ConteinerCLEdesarrollo className="Section-cledesarrollo">
       <Columnas varalignitems="center">
@@ -34,16 +41,14 @@ const CLEdesarrollo = () => {
             <Roboto varcolor="#ffffff" fontsize="24px">
               Llena los siguientes formualrios para
             </Roboto>
-            <Btn
-              varbackgroundcolor="#00394C"
-              varwidth="320px"
-              varpadd="15px 0 15px"
-              varmargin="30px 0 30px"
-              varbackgroundcolorh="black"
-              varwidthmovil="100%"
+
+            <button
+              className="button-contacto desarrollobtn"
+              onClick={togglePopup}
             >
               Contactar un asesor
-            </Btn>
+            </button>
+            {showPopup && <FormContacto closePopup={togglePopup} />}
           </div>
         </Columna>
         <Columna>

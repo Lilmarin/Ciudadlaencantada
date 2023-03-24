@@ -1,0 +1,51 @@
+.Header-Background-CLE {
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_HOME_HEADER_DIA.png");
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 900px) {
+  .Header-Background-CLE {
+    padding-top: 10em;
+    height: 82vh;
+    margin-bottom: 49em;
+  }
+}
+.Header-Background-CLE .Bottoom-box-caracteristicas {
+  width: 88.5%;
+  min-height: 300px;
+  position: absolute;
+  margin-left: 0;
+  bottom: -225px;
+}
+@media (max-width: 900px) {
+  .Header-Background-CLE .Bottoom-box-caracteristicas {
+    width: 85%;
+    position: relative;
+    bottom: -275px;
+  }
+}
+.Header-Background-CLE .Bottoom-box-caracteristicas .grid-item-card {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_HEADER_SECTION_BACKGROUND.png");
+}
+@media (max-width: 900px) {
+  .Header-Background-CLE .Bottoom-box-caracteristicas .grid-item-card {
+    padding: 40px 0 30px;
+  }
+}
+.Header-Background-CLE .Bottoom-box-caracteristicas .grid-item-card img {
+  margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .Header-Background-CLE .Bottoom-box-caracteristicas .grid-item-card img {
+    max-height: 55px;
+  }
+}/*# sourceMappingURL=HeaderSection.css.map */

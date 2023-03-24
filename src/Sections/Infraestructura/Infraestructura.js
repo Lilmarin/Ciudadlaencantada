@@ -219,6 +219,7 @@ const Infraestructura = ({ infraestructura }) => {
                 <Columnas
                   vargridcolumns="10% 89%"
                   vardisplay="innerit"
+                  vardisplaymil="innerit"
                   vardirection="innerit"
                   className="padd gridgapcolumns3"
                 >
@@ -243,6 +244,7 @@ const Infraestructura = ({ infraestructura }) => {
                   vargridcolumns="10% 89%"
                   varmargin="30px 0 30px"
                   vardisplay="innerit"
+                  vardisplaymil="innerit"
                   vardirection="innerit"
                   className="padd gridgapcolumns3"
                 >
@@ -260,6 +262,7 @@ const Infraestructura = ({ infraestructura }) => {
                 <Columnas
                   vargridcolumns="10% 89%"
                   vardisplay="innerit"
+                  vardisplaymil="innerit"
                   vardirection="innerit"
                   className="padd gridgapcolumns3"
                 >
@@ -283,6 +286,7 @@ const Infraestructura = ({ infraestructura }) => {
                   vargridcolumns="10% 89%"
                   varmargin="30px 0 30px"
                   vardisplay="innerit"
+                  vardisplaymil="innerit"
                   vardirection="innerit"
                   className="padd gridgapcolumns3"
                 >

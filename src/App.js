@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import Headerday from "./assets/img/CIUDAD_ENCANTADA_HOME_HEADER_DIA.png";
 import Headernight from "./assets/img/CIUDAD_ENCANTADA_HOME_HEADER_NOCHE.png";
 import moment from "moment";
+import WhatsappButton from "./Components/WhatsappButton";
 
 function App() {
   //Cambio de background según la hora
@@ -61,10 +62,10 @@ function App() {
   //Fin de cambio en Background de Home
 
   //Enlace a Galeria del sitio web
-  const myRef = useRef(null);
+  const galeria = useRef(null);
   const executeScroll = () => {
     window.scrollTo({
-      top: myRef.current.offsetTop - 65,
+      top: galeria.current.offsetTop - 65,
       behavior: "smooth",
     });
   };
@@ -118,11 +119,13 @@ function App() {
               <Home
                 backgroundImage={backgroundImage}
                 handleClick={handleClick}
-                myRef={myRef}
+                galeria={galeria}
                 ubicacion={ubicacion}
                 amenidades={amenidades}
                 infraestructura={infraestructura}
               />
+
+              <WhatsappButton />
             </PageWrapper>
           }
         ></Route>

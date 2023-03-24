@@ -1,7 +1,7 @@
 .Tamanos-Terrenos {
   background-color: #f5f5f5;
   .tamanos-container {
-    margin: 20px auto;
+    margin: 20px auto 40px;
     width: 99.8%;
     .tamanos-item {
       min-height: auto;
@@ -12,24 +12,113 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
+        @media (max-width: 900px) {
+          min-height: 170px;
+        }
       }
       &.dos {
-        background-image: url("../../assets/img/grupo.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 80%;
         background-color: #f5f5f5;
         border: solid 10px #d9d9d9;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        .content-up-bottom {
+          width: 90%;
+          &.upp {
+            margin-top: 2em;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            .Eng-elementos {
+              margin-left: 2em;
+            }
+          }
+          &.bottomm {
+            margin-bottom: 36px;
+            @media (max-width: 900px) {
+              margin-bottom: 20px;
+            }
+          }
+        }
+
+        table {
+          width: 93%;
+          @media (max-width: 900px) {
+            margin-bottom: 0.5em;
+          }
+          thead {
+            tr {
+              th {
+                font-size: 16px;
+                background-color: #b3282d;
+                color: #ffffff;
+                padding: 10px 0 10px 14px;
+                text-align: left;
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                border: #e0e0e0 solid 1px;
+                font-family: "Montserrat", sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 18px;
+                padding: 8px 0px 8px 14px;
+                color: #4f4f4f;
+                @media (max-width: 900px) {
+                  font-size: 12px;
+                  line-height: 14px;
+                }
+                &.uno {
+                  background-color: #e7cbcc;
+                }
+              }
+            }
+          }
+        }
       }
       &.tres {
-        padding-top: 0;
+        padding: 0;
         max-width: 65%;
         margin: 0 0 0 auto;
+        @media (max-width: 900px) {
+          max-width: 100%;
+          padding-left: 0;
+          margin-top: 1.5em;
+        }
+        .slick-dots li.slick-active button:before {
+          color: #b3282d;
+        }
+        .slick-arrow {
+          display: none !important;
+        }
+        .slick-prev {
+          display: none !important;
+        }
+        .slick-slider {
+          .slick-dots {
+            li {
+              margin: -2.5em 0px 0px;
+            }
+          }
+        }
+
         .backgrounds-containers {
-          height: 300px;
+          height: 420px;
           background-repeat: no-repeat;
           background-position: center;
-          background-size: 100%;
+          background-size: cover;
+          @media (max-width: 900px) {
+            height: 215px;
+          }
           &.imagen-uno {
             background-image: url("../../assets/img/CIUDAD_ENCANTADA_TAMANOS_RENDER1.png");
           }
