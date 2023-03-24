@@ -9,8 +9,6 @@ import {
   Line,
 } from "../../Components/Styled2";
 
-let Carrusel1 = require("../../assets/img/CIUDAD_ENCANTADA_GALERIA_LAGUNA_INDUSTRIAL_PARK.png");
-
 const images = [
   {
     id: 1,

@@ -52,6 +52,7 @@ const Tamanosterrenos = () => {
     <Backgroundbigcontainer
       className="Tamanos-Terrenos"
       varpadding="77px 0 118px"
+      varpaddingm="50px 0 70px"
       varbackgroundcolor="#F5F5F5"
     >
       <Containeramenidades>

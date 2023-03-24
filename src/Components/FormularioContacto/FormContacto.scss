@@ -1,175 +1,177 @@
 .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .popup-content {
-    background: linear-gradient(to right, #BC4F53, #B3282D) no-repeat center center fixed;
-    border-radius: 5px;
-    max-width: 1395px;
-    width: 96.8%;
-    min-height: 556px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-  }
-  .popup-content > div{
-    padding: 20px;
-    margin: 0%; 
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-image: url("../../assets/img/CIUDAD_ENCANTADA_CONTACTO_BACKGROUND_FORMULARIO.png");
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    
-  }
-   
-  .displaynoneemailmovil{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999999999999999999999999999;
+}
+
+.popup-content {
+  background: linear-gradient(to right, #bc4f53, #b3282d) no-repeat center
+    center fixed;
+  border-radius: 5px;
+  max-width: 1395px;
+  width: 96.8%;
+  min-height: 556px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.popup-content > div {
+  padding: 20px;
+  margin: 0%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../../assets/img/CIUDAD_ENCANTADA_CONTACTO_BACKGROUND_FORMULARIO.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.displaynoneemailmovil {
+  display: none;
+}
+.popup-content-items {
+  width: 80%;
+  max-width: 1109px;
+}
+
+.popup-content .cerrar {
+  background: none;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 500;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 5;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.popup-content .btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content-items .gridgaptext {
+  grid-gap: 7%;
+}
+.popup-content-items .gridgapnumber {
+  grid-gap: 7.5%;
+}
+/* Estilos para el formulario */
+.popup-content-items form {
+  width: 100%;
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+.popup-content-items input[type="text"],
+input[type="number"],
+input[type="email"] {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  padding: 15px 0 15px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  -webkit-text-fill-color: #cccccc;
+}
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 15px 0 0px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  -webkit-text-fill-color: #cccccc;
+}
+
+.popup-content-items label {
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 11px;
+  margin-top: 11px;
+  font-weight: bold;
+  color: wheat;
+}
+
+.popup-content-items input[type="submit"] {
+  background-color: #129b46;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content-items input[type="submit"]:hover {
+  background-color: #129b47ea;
+  transform: translateX(5px);
+}
+
+.conexiones :hover {
+  cursor: pointer;
+  transform: translateY(3px);
+}
+
+/* Estilos para mensajes de error */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 500px) and (min-width: 100px) {
+  .displaynoneemail {
     display: none;
   }
-  .popup-content-items{
-    width: 80%;
-    max-width: 1109px;
+  .displaynoneemailmovil {
+    display: inline-block;
+    width: 100%;
   }
-  
-  .popup-content .cerrar {
-    background: none;
-    color: #ffffff;
-    font-size: 50px;
-    font-weight: 500;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    z-index: 5;
-    position: absolute;
-    top: 15px;
-    right: 20px;
+  .popup-content-items {
+    width: 90%;
   }
-  .popup-content .btn {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .popup-content-items .gridgaptext{
-    grid-gap: 7%;
-  }
-  .popup-content-items .gridgapnumber{
-    grid-gap: 7.5%;
-  }
-  /* Estilos para el formulario */
-  .popup-content-items form {
-    width: 100%; max-width: 100%;
-    margin: 0px auto;
-  }
-
   .popup-content-items input[type="text"],
   input[type="number"],
-  input[type="email"]{
-    display: flex;
-    flex-direction: row;
-    width: 100%; max-width: 100%;
-    padding: 15px 0 15px 15px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    -webkit-text-fill-color: #CCCCCC;
+  input[type="email"] {
+    padding: 10px 0 10px 8px;
   }
-  textarea {
-    display: block;
-    width: 100%; max-width: 100%;
-    padding: 15px 0 0px 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-   
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    -webkit-text-fill-color: #CCCCCC;
-  }
-  
-
-  .popup-content-items label {
-    display: block;
-    text-align: left;
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 11px;
-    margin-top: 11px;
-    font-weight: bold;
-    color: wheat;
-  }
-
-  .popup-content-items input[type="submit"] {
-    background-color: #129B46;
-    color: #fff;
-    border: none;
-    padding: 12px;
-    font-size: 22px;
-    font-family: "Montserrat", sans-serif;
-    width: 100%; max-width: 100%;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .popup-content-items input[type="submit"]:hover  {
-    background-color: #129b47ea;
-    transform: translateX(5px);
-  }
-
-  .conexiones :hover{
-    cursor: pointer;
-    transform: translateY(3px);
-  }
-
-  /* Estilos para mensajes de error */
-  .error {
-    color: red;
-    font-size: 12px;
-    margin-top: 5px;
-  }
-
-  @media screen and (max-width: 500px) and (min-width: 100px) {
-    
-    .displaynoneemail{
-      display: none;
-    }
-    .displaynoneemailmovil{
-      display: inline-block;
-      width: 100%;
-    }
-    .popup-content-items{
-        width: 90%;
-      }
-    .popup-content-items input[type="text"],
-    input[type="number"],
-    input[type="email"]{
-        padding: 10px 0 10px 8px;
-    }
   textarea {
     padding: 10px 0 10px 8px;
   }
-  
 
   .popup-content-items label {
     display: block;
@@ -183,28 +185,27 @@
   }
 
   .popup-content-items input[type="submit"] {
-    background-color: #129B46;
+    background-color: #129b46;
     color: #fff;
     border: none;
     padding: 12px;
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
-    width: 100%; max-width: 100%;
+    width: 100%;
+    max-width: 100%;
     text-align: center;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+}
 
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  .displaynoneemailmovil {
+    display: none;
   }
-
-  @media screen and (max-width: 1000px) and (min-width: 500px) {
-
-    .displaynoneemailmovil{
-      display: none;
-    }
-  .conexionesgridgap{
+  .conexionesgridgap {
     grid-gap: 10px;
   }
 }
