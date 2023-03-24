@@ -62,10 +62,10 @@ function App() {
   //Fin de cambio en Background de Home
 
   //Enlace a Galeria del sitio web
-  const myRef = useRef(null);
+  const galeria = useRef(null);
   const executeScroll = () => {
     window.scrollTo({
-      top: myRef.current.offsetTop - 65,
+      top: galeria.current.offsetTop - 65,
       behavior: "smooth",
     });
   };
@@ -119,12 +119,12 @@ function App() {
               <Home
                 backgroundImage={backgroundImage}
                 handleClick={handleClick}
-                myRef={myRef}
+                galeria={galeria}
                 ubicacion={ubicacion}
                 amenidades={amenidades}
                 infraestructura={infraestructura}
               />
-              
+
               <WhatsappButton />
             </PageWrapper>
           }

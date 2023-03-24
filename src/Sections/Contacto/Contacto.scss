@@ -24,6 +24,9 @@
   &.headerbtn {
     margin: 40px auto 250px 5.75%;
     font-size: 18px;
+    @media (max-width: 900px) {
+      margin: auto;
+    }
   }
   &.presentacionbtn {
     width: 280px;
