@@ -23,6 +23,11 @@ const PageWrapper = (props) => {
       props.executeScrollinfraestructura();
     }, 1000);
   };
+  const scrollHomepropiedades = () => {
+    setTimeout(() => {
+      props.executeScrollpropiedades();
+    }, 1000);
+  };
 
   return (
     <React.Fragment>
@@ -33,6 +38,7 @@ const PageWrapper = (props) => {
         executeScrollubicacion={scrollHomeubicacion}
         executeScrollamenidades={scrollHomeamenidades}
         executeScrollinfraestructura={scrollHomeinfraestructura}
+        executeScrollpropiedades={scrollHomepropiedades}
         selectedOption={props.selectedOption}
       />
       {props.children}

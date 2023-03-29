@@ -116,11 +116,14 @@ export const Columnas = styled.div`
 
 export const Columna = styled.div`
   width: 100%;
-  display:flex;
+  display: ${(props) => props.vardisplay || "flex"};
   flex-direction: column;
   @media (max-width: 800px) {
   margin: ${(props) => props.varmarginmovil || "0px"};
   width: ${(props) => props.varwidthmovil || "100%"};
+  }
+  @media (max-width: 500px) {
+    display: ${(props) => props.vardisplaymovil || (props.vardisplay)};
   }
 `;
 
@@ -256,14 +259,14 @@ export const BtnWhatsApp = styled.button`
   background:none;
   position: fixed;
 	bottom: 40px;
-	right: 40px;
+	right: 20px;
+  margin: 0px;
 	transition: all 300ms ease 0ms;
   padding-top: 15px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   &:hover {
   cursor: pointer;
   transform:translate(3px);
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 	transform: translateY(-7px);
   border-radius: 96%
 } 

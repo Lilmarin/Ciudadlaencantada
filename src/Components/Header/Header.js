@@ -12,6 +12,7 @@ const Header = ({
   executeScrollubicacion,
   executeScrollamenidades,
   executeScrollinfraestructura,
+  executeScrollpropiedades,
 }) => {
   var elemento = document.getElementById("navbar-upper");
   window.onscroll = function () {
@@ -43,13 +44,17 @@ const Header = ({
     setIsOpen(!isOpen);
     executeScrollinfraestructura();
   };
+  const specialFunction5 = () => {
+    setIsOpen(!isOpen);
+    executeScrollpropiedades();
+  };
   const enlaces = [
     { id: 1, texto: "Galeria", url: specialFunction },
     { id: 2, texto: "Ubicación", url: specialFunction2 },
     { id: 3, texto: "Amenidades", url: specialFunction3 },
     { id: 4, texto: "Infraestructura", url: specialFunction4 },
     { id: 3, texto: "Precios", url: specialFunction },
-    { id: 4, texto: "Comercializador", url: specialFunction },
+    { id: 4, texto: "Comercializador", url: specialFunction5 },
   ];
 
   const [showComponent, setShowComponent] = useState(false);
