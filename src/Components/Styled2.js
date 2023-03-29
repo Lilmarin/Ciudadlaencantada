@@ -117,6 +117,7 @@ export const Columnas = styled.div`
 export const Columna = styled.div`
   width: 100%;
   display: ${(props) => props.vardisplay || "flex"};
+  position: relative;
   flex-direction: column;
   @media (max-width: 800px) {
   margin: ${(props) => props.varmarginmovil || "0px"};
@@ -227,7 +228,7 @@ export const ConteinerCLEdesarrollo = styled.div`
 
 export const ContainerResultados = styled.div`
   width: 100%;
-  min-height: 350px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
