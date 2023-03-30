@@ -5,7 +5,9 @@ import './FormContacto.scss';
 function Popup(props) {
   return (
     <div className="popup">
+
       <div className="popup-content">
+      <button onClick={props.closePopup} className="cerrar">x</button>
         <div>
         <div className="popup-content-items">
           <Columnas
@@ -40,6 +42,7 @@ function Popup(props) {
               >
                 Dejanos tus datos, pronto nuestros asesores se pondrán en contacto  contigo
               </Roboto>
+              
               <Roboto
               varcolor="#ffffff"
               fontsize="18px"
@@ -49,18 +52,19 @@ function Popup(props) {
               varmargin="0 0 20px"
               varmarginmovil="15px 0 0"
               className='displaynoneemail'
+              vardisplay="none"
               >
                 Más conexiones
               </Roboto>
               <Columnas
               vargrid="grid"
-              vardisplay="grid"
               vardisplaymil="grid"
               className='conexionesgridgap displaynoneemail'
               vardirection="column"
               vargridcolumns="25% 25% 25% 25%"
               varwidth="53%"
               varwidthmovil="78%"
+              vardisplay="none"
               
               >
                 <Columna>
@@ -96,7 +100,7 @@ function Popup(props) {
             </Columna>
 
             <Columna>
-            <button onClick={props.closePopup} className="cerrar">x</button>
+            
 
               <form action='#' method='post'>
                 <Columnas 
