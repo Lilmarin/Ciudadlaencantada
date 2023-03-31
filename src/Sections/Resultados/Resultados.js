@@ -1,5 +1,5 @@
 import React from "react";
-import { Columna, Columnas, ContainerResultados, Title } from "../../Components/Styled2";
+import { Columna, Columnas, ContainerResultados, Title, Line } from "../../Components/Styled2";
 import "./Resultados.scss";
 
 
@@ -13,6 +13,15 @@ const Resultados = () => {
     <ContainerResultados
     className="Section-resultados"
     >
+      <Line
+      backgroundcolor="white"
+      >
+      </Line>
+      <Title
+      fontsize="40px"
+      varcolor="white"
+      varpadd="20px 10px 40px"
+      >Licencia API en resumen</Title>
       <Columnas
       varalignitems="center"
       vargridcolumns = "25% 25% 25% 25%"

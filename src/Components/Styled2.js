@@ -8,7 +8,7 @@ export const Roboto = styled.p`
   font-weight: ${(props) => props.varweight || "400"};
   color: ${(props) => props.varcolor || "#4F4F4F"};
   font-size: ${(props) => props.fontsize || "22px"};
-  display: flex;
+  display: ${(props) => props.vardisplayall || "flex"};
   line-height: ${(props) => props.varlineheight || "136%"};
   text-align: ${(props) => props.varalign || "left"};
   align-items: center;
@@ -91,14 +91,14 @@ export const Containerinfraestructura = styled.div`
 
 export const Columnas = styled.div`
   width: ${(props) => props.varwidth || "100%"};
-  max-width: 100%;
-  display: grid;
+  max-width:100%;
+  display: ${(props) => props.vardisplayall || "grid"};
   grid-template-columns: ${(props) => props.vargridcolumns || "50% 50%"};
   justify-content: ${(props) => props.varjustifycontent || "center"};
   align-items: ${(props) => props.varalignitems || "auto"};
   margin: ${(props) => props.varmargin || "0px"};
   min-height: ${(props) => props.varminheight || "0px"};
-
+  position: relative;  
   @media (max-width: 1000px) {
     grid: ${(props) => props.vargrid || "innerit"};
     display: ${(props) => props.vardisplaymil || "flex"};
@@ -110,17 +110,22 @@ export const Columnas = styled.div`
     width: ${(props) => props.varwidthmovil || "auto"};
     grid: ${(props) => props.vargrid || "innerit"};
     display: ${(props) => props.vardisplay || "flex"};
-    flex-direction: ${(props) => props.vardirection || "column-reverse"};
+    flex-direction: ${(props) => props.vardirection || "column-reverse"}; 
+    display: ${(props) => props.vardisplaymovil || (props.vardisplay)};
   }
 `;
 
 export const Columna = styled.div`
   width: 100%;
-  display: flex;
+  display: ${(props) => props.vardisplay || "flex"};
+  position: relative;
   flex-direction: column;
   @media (max-width: 800px) {
     margin: ${(props) => props.varmarginmovil || "0px"};
     width: ${(props) => props.varwidthmovil || "100%"};
+  }
+  @media (max-width: 500px) {
+    display: ${(props) => props.vardisplaymovil || (props.vardisplay)};
   }
 `;
 
@@ -224,7 +229,7 @@ export const ConteinerCLEdesarrollo = styled.div`
 
 export const ContainerResultados = styled.div`
   width: 100%;
-  min-height: 350px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -255,18 +260,23 @@ export const BtnWhatsApp = styled.button`
   border: none;
   background: none;
   position: fixed;
-  bottom: 40px;
-  right: 40px;
-  transition: all 300ms ease 0ms;
+
+	bottom: 40px;
+	right: 20px;
+  margin: 0px;
+	transition: all 300ms ease 0ms;
   padding-top: 15px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   &:hover {
-    cursor: pointer;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
-    border-radius: 96%;
-  }
+  cursor: pointer;
+  transform:translate(3px);
+	transform: translateY(-7px);
+  border-radius: 96%
+}
   @media (max-width: 900px) {
     right: 10px;
     bottom: 20px;
   }
 `;
+
+

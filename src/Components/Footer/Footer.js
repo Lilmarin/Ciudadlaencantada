@@ -172,7 +172,7 @@ const Footer = () => {
           </Grid>
           <Grid className="footer-item-grid dos" item md={6} sm={6} xs={12}>
             <Montserrat varcolor="#ffffff" fontsize="18px" fontsizem="10px">
-              Hecho por <a href="https://google.com">: Ingeniería Digital</a>
+              Página creada y diseñada con Amor por <a href="https://ingenieriadigital.mx/">: Ingeniería Digital</a>
             </Montserrat>
             <div className="figmaandreact web">
               <svg

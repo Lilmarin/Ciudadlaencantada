@@ -98,6 +98,16 @@ function App() {
   };
   //Fin de enlaces a infraestructura del sitio web
 
+   //Enlace a Comercializador del sitio web
+   const propiedades = useRef(null);
+   const executeScrollpropiedades = () => {
+     window.scrollTo({
+       top: propiedades.current.offsetTop - 65,
+       behavior: "smooth",
+     });
+   };
+   //Fin de enlaces a comercializador del sitio web
+
   return (
     <BrowserRouter>
       <Routes>
@@ -115,6 +125,7 @@ function App() {
               executeScrollubicacion={executeScrollubicacion}
               executeScrollamenidades={executeScrollamenidades}
               executeScrollinfraestructura={executeScrollinfraestructura}
+              executeScrollpropiedades={executeScrollpropiedades}
             >
               <Home
                 backgroundImage={backgroundImage}
@@ -123,6 +134,7 @@ function App() {
                 ubicacion={ubicacion}
                 amenidades={amenidades}
                 infraestructura={infraestructura}
+                propiedades={propiedades}
               />
 
               <WhatsappButton />
