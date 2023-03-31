@@ -171,6 +171,7 @@ let agua = require("../../assets/img/CIUDAD_ENCANTADA_INFRAESTRUCTURA_icon-agua.
 
 let img1Infraestructura = require("../../assets/img/CIUDAD_ENCANTADA_INFRAESTRUCTURA_RECTANGLE 856.png");
 let img2Infraestructura = require("../../assets/img/CIUDAD_ENCANTADA_INFRAESTRUCTURA_RECTANGLE 857.png");
+let bandera = require("../../assets/img/CiudadLaEncantada_INFRAESTRUCTURA_BANDERITA.png");
 
 const Infraestructura = ({ infraestructura }) => {
   return (
@@ -202,7 +203,14 @@ const Infraestructura = ({ infraestructura }) => {
                   <img
                     src={img2Infraestructura}
                     id="image"
+                    className="infraimagen"
                     alt="ciudad encantada-infraestructura estructura edifcio"
+                  ></img>
+                  <img
+                  src={bandera}
+                  id="image"
+                  alt="ciudad encantada-infraestructura banderita roja"
+                  className="banderitaRoja"
                   ></img>
                 </ColumnImage>
               </ColumnsImage>

@@ -8,7 +8,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999999999999999999999999999999;
+  z-index: 9999;
+  pointer-events: none;
 }
 
 .popup-content {
@@ -22,6 +23,9 @@
   justify-content: center;
   text-align: center;
   position: relative;
+  z-index: 10000;
+  pointer-events: auto;
+  overflow-y: auto;
 }
 .popup-content > div {
   padding: 20px;
@@ -34,6 +38,10 @@
   background-image: url("../../assets/img/CIUDAD_ENCANTADA_CONTACTO_BACKGROUND_FORMULARIO.png");
   background-position: bottom right;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 10000;
+  pointer-events: auto;
+  overflow-y: hidden;
 }
 
 .displaynoneemailmovil {
@@ -52,7 +60,7 @@
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  z-index: 5;
+  z-index: 9999;
   position: absolute;
   top: 15px;
   right: 20px;
@@ -154,6 +162,22 @@ textarea {
 }
 
 @media screen and (max-width: 500px) and (min-width: 100px) {
+  .popup-content {
+    background: linear-gradient(to right, #bc4f53, #b3282d) no-repeat center
+      center fixed;
+    border-radius: 5px;
+    max-width: 1395px;
+    width: 96.8%;
+    min-height: 356px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 10000;
+    pointer-events: auto;
+    overflow-y: auto;
+  }
+
   .displaynoneemail {
     display: none;
   }
@@ -167,19 +191,21 @@ textarea {
   .popup-content-items input[type="text"],
   input[type="number"],
   input[type="email"] {
-    padding: 10px 0 10px 8px;
+    padding: 5px 0 5px 8px;
+    font-size: 14px;
   }
   textarea {
-    padding: 10px 0 10px 8px;
+    padding: 5px 0 0px 8px;
+    font-size: 14px;
   }
 
   .popup-content-items label {
     display: block;
     text-align: left;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Montserrat", sans-serif;
-    margin-bottom: 11px;
-    margin-top: 11px;
+    margin-bottom: 8px;
+    margin-top: 8px;
     font-weight: bold;
     color: wheat;
   }
@@ -188,8 +214,8 @@ textarea {
     background-color: #129b46;
     color: #fff;
     border: none;
-    padding: 12px;
-    font-size: 22px;
+    padding: 10px;
+    font-size: 18px;
     font-family: "Montserrat", sans-serif;
     width: 100%;
     max-width: 100%;

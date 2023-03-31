@@ -26,7 +26,7 @@ const Home = (props) => {
       <Tamanosterrenos />
       <Presentacion />
       <CLEdesarrollo />
-      <Propiedadesmexico />
+      <Propiedadesmexico propiedades={props.propiedades}/>
       <Resultados />
       <Contacto />
       

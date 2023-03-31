@@ -11,14 +11,14 @@ let icon3 = require("../../assets/img/CIUDAD_ENCANTADA_PROPIEDADES_MEXICO_ICONO3
 let icon4 = require("../../assets/img/CIUDAD_ENCANTADA_PROPIEDADES_MEXICO_ICONO4.png");
 let icon5 = require("../../assets/img/CIUDAD_ENCANTADA_PROPIEDADES_MEXICO_ICONO5.png");
 
-const Propiedadesmexico = () => {
+const Propiedadesmexico = ({propiedades}) => {
   return (
     <Backgroundbigcontainer
       varbackgroundcolor="#F5F5F5"
       varpadding="100px 0 100px"
-      varpaddingm="50px 0 70px"
+      ref={propiedades}
     >
-      <section className="Section-Propiedadesmexico">
+      <section className="Section-Propiedadesmexico" >
         <div id="sizeContent2">
           <img
             src={propiedades_mexico}
