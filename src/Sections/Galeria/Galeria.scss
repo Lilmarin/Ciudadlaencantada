@@ -6,8 +6,7 @@
   align-items: center;
   background-image: url("../../assets/img/CIUDAD_ENCANTALA_GALERIA_BACKGROUND.png");
 
-  
-  .imagenCarrusel{
+  .imagenCarrusel {
     width: 98%;
     height: 100%;
     margin: 15px;
@@ -18,10 +17,10 @@
     height: 475px;
     overflow: hidden;
   }
-  
 }
 
 @media screen and (max-width: 900px) and (min-width: 600px) {
+
   .Galeria-Container{
     margin-top: 700px;
   }
@@ -34,13 +33,15 @@
       width: 225px;
       height: 260px;
       text-align: center;
-     
+   
+}
+
       overflow: hidden;
     }
-    .imagenCarrusel{
+    .imagenCarrusel {
       width: 100%;
     }
-    .gridgapSlider{
+    .gridgapSlider {
       grid-gap: 30px;
     }
     .slick-arrow {
@@ -58,4 +59,3 @@
     }
   }
 }
-

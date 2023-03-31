@@ -1,6 +1,5 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import FormContacto from "../../Components/FormularioContacto/FormContacto";
-import { ContainerContacto } from "../../Components/Styled2";
 import "../Contacto/Contacto.scss";
 
 import { Littleline } from "../../Components/Styled";
@@ -9,14 +8,12 @@ import {
   Columnas,
   Columna,
   Roboto,
-  Btn,
 } from "../../Components/Styled2";
 import "./CLEdesarrollo.scss";
 
 let logo_CLEdesarrollo = require("../../assets/img/CIUDAD_ENCANTADA_LOGO.png");
 
 const CLEdesarrollo = () => {
-
   const [showPopup, setShowPopup] = useState(false);
 
   function togglePopup() {
@@ -46,17 +43,12 @@ const CLEdesarrollo = () => {
             </Roboto>
 
             <button
-            className="button-contacto desarrollobtn"
-            onClick={togglePopup}
+              className="button-contacto desarrollobtn"
+              onClick={togglePopup}
             >
               Contactar un asesor
             </button>
-            {showPopup && (
-              <FormContacto
-              closePopup={togglePopup}
-              />
-            )}
-            
+            {showPopup && <FormContacto closePopup={togglePopup} />}
           </div>
         </Columna>
         <Columna>
