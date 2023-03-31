@@ -20,21 +20,18 @@
 }
 
 @media screen and (max-width: 900px) and (min-width: 600px) {
-
-  .Galeria-Container{
+  .Galeria-Container {
     margin-top: 700px;
   }
 }
 @media screen and (max-width: 600px) and (min-width: 100px) {
-  .Galeria-Container{
+  .Galeria-Container {
     margin-top: 630px;
-    
+
     .containerImage {
       width: 225px;
       height: 260px;
       text-align: center;
-   
-}
 
       overflow: hidden;
     }
