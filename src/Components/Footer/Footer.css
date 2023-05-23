@@ -59,6 +59,9 @@
 .footer-component .inside-footer.second .grid-content {
   max-width: 1644px;
   width: 85%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .footer-component .inside-footer.second .grid-content .footer-item-grid {
   display: flex;
@@ -74,10 +77,37 @@
 }
 .footer-component .inside-footer.second .grid-content .footer-item-grid.uno {
   justify-content: start;
+  flex-direction: column;
+}
+.footer-component .inside-footer.second .grid-content .footer-item-grid.uno .figmaandreact {
+  margin-left: 0.8em;
+}
+.footer-component .inside-footer.second .grid-content .footer-item-grid.uno .figmaandreact.mobile {
+  display: none;
+}
+@media (max-width: 900px) {
+  .footer-component .inside-footer.second .grid-content .footer-item-grid.uno .figmaandreact.mobile {
+    display: inline;
+    margin: 20px auto;
+  }
 }
 .footer-component .inside-footer.second .grid-content .footer-item-grid.dos {
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .footer-component .inside-footer.second .grid-content .footer-item-grid.dos {
+    padding-bottom: 30px;
+  }
 }
 .footer-component .inside-footer.second .grid-content .footer-item-grid.dos .figmaandreact {
   margin-left: 0.8em;
+}
+.footer-component .inside-footer.second .grid-content .footer-item-grid.dos .figmaandreact.web {
+  display: inline;
+}
+@media (max-width: 900px) {
+  .footer-component .inside-footer.second .grid-content .footer-item-grid.dos .figmaandreact.web {
+    display: none;
+  }
 }/*# sourceMappingURL=Footer.css.map */
