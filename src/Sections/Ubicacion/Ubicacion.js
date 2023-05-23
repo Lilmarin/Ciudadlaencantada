@@ -38,7 +38,7 @@ const Ubicacion = ({ ubicacion }) => {
               </Roboto>
               <ul>
                 <li>
-                  <Roboto>A 1 min de Waltmart Gómez Palacio</Roboto>
+                  <Roboto>A 1 min de Walmart Gómez Palacio</Roboto>
                 </li>
                 <li>
                   <Roboto>A 5 min de Torreón</Roboto>
