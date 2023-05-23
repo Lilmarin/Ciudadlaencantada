@@ -22,6 +22,11 @@
 .button-contacto.derecha {
   margin: 1em 0 0 auto;
 }
+@media (max-width: 900px) {
+  .button-contacto.derecha {
+    margin: 1em auto 0;
+  }
+}
 .button-contacto.headerbtn {
   margin: 40px auto 250px 5.75%;
   font-size: 18px;

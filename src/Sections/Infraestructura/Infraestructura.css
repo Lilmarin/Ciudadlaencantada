@@ -7,6 +7,17 @@
   display: flex;
   justify-content: center;
 }
+.Section-Infraestructura .banderitaRoja {
+  max-width: 110px;
+  max-height: 149px;
+  position: absolute;
+  bottom: -50px;
+  right: 20px;
+  z-index: 9;
+}
+.Section-Infraestructura .infraimagen {
+  position: relative;
+}
 .Section-Infraestructura .image {
   border-radius: 10px;
   width: 100%;
@@ -61,6 +72,9 @@
     min-height: 400px;
     height: 1230px;
   }
+  .Section-Infraestructura .banderitaRoja {
+    max-width: 80px;
+  }
   .Section-Infraestructura h2 {
     font-size: 24px;
     font-weight: 600;
@@ -97,8 +111,16 @@
     min-width: 30px;
     margin-top: 5px;
   }
+  .Section-Infraestructura .banderitaRoja {
+    max-width: 60px;
+    bottom: -40px;
+  }
 }
 @media screen and (max-width: 1000px) and (min-width: 100px) {
+  .Section-Infraestructura .banderitaRoja {
+    max-width: 80px;
+    bottom: -40px;
+  }
   .Section-Infraestructura .title {
     margin: auto;
     display: flex;

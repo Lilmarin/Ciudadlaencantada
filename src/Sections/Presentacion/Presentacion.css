@@ -8,6 +8,12 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 900px) {
+  .Section-presentacion {
+    min-height: auto;
+    padding: 70px 0;
+  }
+}
 .Section-presentacion .imageDispositivos {
   background-position: center;
   background-size: cover;
