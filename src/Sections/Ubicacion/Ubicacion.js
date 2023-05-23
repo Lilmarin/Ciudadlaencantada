@@ -31,12 +31,15 @@ const Ubicacion = ({ ubicacion }) => {
                 varminheight="5px"
                 className="displaynone"
               />
-              <Title varpaddi="20px 0 20px">Ubicacion</Title>
+              <Title varpaddi="20px 0 20px">Ubicación</Title>
               <Roboto>
                 Te brindamos una ubicación premium justo en en el corazón de la
                 Laguna, frente al Periférico que es el Blvd central.
               </Roboto>
               <ul>
+                <li>
+                  <Roboto>A 1 min de Waltmart Gómez Palacio</Roboto>
+                </li>
                 <li>
                   <Roboto>A 5 min de Torreón</Roboto>
                 </li>
